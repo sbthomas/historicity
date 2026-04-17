@@ -65,6 +65,10 @@ The preamble uses `natbib`, `hyperref`, `titlesec`, `fancyhdr`, `setspace`, `boo
 }
 ```
 
+## License
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/). See [`LICENSE`](LICENSE) for the full text. You are free to share and adapt the material with appropriate attribution; commercial use is not permitted.
+
 ## Acknowledgments
 
 This paper benefited from extensive critical dialogue conducted with Claude (Anthropic), which served as adversarial interlocutor and peer reviewer throughout the analytical process. The arguments and conclusions are the author's own.
