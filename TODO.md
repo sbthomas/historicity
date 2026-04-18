@@ -6,7 +6,35 @@ notes why it matters, current state, and rough scope estimate.
 
 Legend: **[P1]** = do before next submission attempt; **[P2]** = strengthen
 substantially, can follow initial submission; **[P3]** = long-term research
-program; **[QA]** = quality assurance / publication-readiness.
+program; **[QA]** = quality assurance / publication-readiness;
+**[DONE]** = substantively addressed in current paper and supplements.
+
+## Summary of completion status
+
+Ten of the fifteen substantive items have been addressed in the paper
+and supplements. Remaining items require external collaboration or
+large-scale mechanical extension.
+
+**Done** (in the paper / supplements / scripts):
+- #1 Epigraphic *adelphoi* study (Harland inscriptional appendix)
+- #2 Comparative existence-question case-study section (§2.5)
+- #3 Jewish mystical-ascent engagement (§8.2)
+- #4 Text-critical cluster analysis of contested passages (§3.1)
+- #7 Journal-length version (*historicity-journal.tex*)
+- #8 Stylometric analysis (*scripts/stylometry.py* + §3.1)
+- #9 Rabbinic counter-narrative engagement (§6.5)
+- #12 Bayesian network formal model (*scripts/bayesian_sensitivity.py* + §2.2)
+- #15 Archaeological substrate analysis (§6.7)
+- #17 Mandaean tradition engagement (§6.6)
+
+**Requires external collaboration or process steps**:
+- #5 Inter-rater agreement for classification (external coder)
+- #10 Stylometric analysis at larger scale (extended feature sets, formal statistical testing)
+- #19 Patristic citation-chain analysis (partially covered in §3.1; full survey deferred)
+- #20 Expanded baseline sampling to n=100/bucket
+- #24 External expert review (Allison, Fredriksen, Harland, Carrier)
+- #25 External expert review (continued)
+- #26 Preprint deposit and DOI assignment
 
 ---
 
