@@ -1,0 +1,101 @@
+#	author	work	ref	greek_form	greek_context	class	reason
+1	Philo	tlg0018/tlg025	51	ἀδελφὴν	Τὴν δ' εὐσεβείας συγγενεστάτην καὶ ἀδελφὴν καὶ δίδυμον	E	Virtue-pairing: "sister" of piety, metaphorical
+2	Philo	tlg0018/tlg006	61	ἀδελφὸν	ψυχαῖς ταῖς φιλοσωμάτοις ἀδελφὸν μὲν νομίζεσθαι τὸ σῶμα	E	"body considered brother" to body-loving souls — metaphorical
+3	Philo	tlg0018/tlg002	3.193	ἀδελφῷ	εὐχόμενος γὰρ ὁ πατήρ σοί φησιν ὅτι "τῷ ἀδελφῷ σου δουλεύσεις"	B	Gen 27 — Isaac's blessing of Esau re Jacob, biological
+4	Philo	tlg0018/tlg027	142	ἀδελφὴν	αὐτουργίαν ἐν, ἀδελφὴν ἐλευθερίας	E	Self-sufficiency as "sister of freedom" — metaphorical
+5	Philo	tlg0018/tlg019	1.91	ἀδελφὸν	εἰ τὸ μετανοεῖν ἀδελφὸν νεώτερον ὂν	E	Repentance personified as a "younger brother" — metaphorical
+6	Philo	tlg0018/tlg017	48	ἀδελφοῦ	θυγατέρων Λάβαν τοῦ ἀδελφοῦ τῆς μητρός σου (Gen. 28,2)	B	Gen 28:2 — Laban as biological brother of Rebekah
+7	Philo	tlg0018/tlg016	44	ἀδελφὸς	Ναχὼρ μέντοι ὁ ἀδελφὸς Ἀβραάμ	B	Nahor as Abraham's biological brother (Gen)
+8	Philo	tlg0018/tlg009	84	ἀδελφός	οὐκ ἀδελφός σού ἐστι	D	Deut 17:15 — "stranger who is not your brother" — covenantal/ethnic
+9	Philo	tlg0018/tlg027	82	ἀδελφοὺς	ἀδελφοὺς (variant reading)	A	De Vita Contemplativa — Therapeutae voluntary ascetic community
+10	Philo	tlg0018/tlg006	30	ἀδελφὸν	ἀδελφὸν γὰρ καὶ συγγενὲς αὐτοῖς	E	Rest (ἠρεμία) as "brother and kin" to descending souls — metaphorical
+11	Philo	tlg0018/tlg025	140	ἀδελφοῖς	συγγενέσι καὶ ἐκ φύσεως ἀδελφοῖς τοῖς πανταχοῦ πᾶσιν	E	Universal-kinship-of-humanity idiom — philosophical metaphor
+12	Philo	tlg0018/tlg031	234	ἀδελφὰς	γυναῖκας οἱ γυναικοκτόνοι, ἀδελφοὺς καὶ ἀδελφὰς οἱ ἀδελφοκτόνοι, κούρους καὶ κόρας, τὴν ἄκακον ἡλικίαν, οἱ	B	bulk-classified (n=100 expansion pass)
+13	Philo	tlg0018/tlg024	1.112	ἀδελφοῖς	πατράσι καὶ μητράσιν, υἱοῖς καὶ θυγατράσιν, ἀδελφοῖς καὶ ἀδελφαῖς παρθένοις	B	Spec. Leg. list of biological family for incest laws
+14	Philo	tlg0018/tlg005	100	ἀδελφοῦ	αἷμα τοῦ ἀδελφοῦ σου (Gen. 4,11)	B	Gen 4:11 — Abel's blood, biological
+15	Philo	tlg0018/tlg024	3.14	ἀδελφόν	πατέρα τε καὶ ὁμομήτριον ἀδελφόν	B	Explicit ὁμομήτριος (same-mother) marker — biological
+16	Philo	tlg0018/tlg021	237	ἀδελφοῖς	μηδὲν ὄνειδος προσβαλεῖν τοῖς ἀδελφοῖς	B	Joseph and his brothers (De Iosepho) — biological
+17	Philo	tlg0018/tlg003	52	ἀδελφοκτόνον	τὸν ἀδελφοκτόνον καὶ ἐπάρατον Κάιν	B	"Brother-killer" compound = Cain (biological, Abel)
+18	Philo	tlg0018/tlg003	43	ἀδελφὸν	τὸν Ἅβελ τὸν ἀδελφὸν αὐτοῦ	B	Abel as biological brother of Cain
+19	Philo	tlg0018/tlg005	126	ἀδελφός	Ἀαρὼν ὁ ἀδελφός σου ὁ Λευίτης	B	Exod 4:14 — Aaron as Moses's biological brother
+20	Philo	tlg0018/tlg015	62	ἀδελφή	ἀληθῶς ἀδελφή μού ἐστιν ἐκ πατρός	B	Gen 20:12 — Sarah as Abraham's half-sister (biological)
+21	Philo	tlg0018/tlg017	23	ἀδελφοῦ	ἀποστρέψαι τὸν θυμὸν καὶ τὴν ὀργὴν τοῦ ἀδελφοῦ σου	B	Rebekah on Esau's anger (Gen 27) — biological
+22	Philo	tlg0018/tlg022	2.156	ἀδελφιδοῦς	ἀδελφιδοῦς GHPV2OK: ἀδελφοὺς ceteri	B	"Nephew" (compound) — biological kin via brother-relation
+23	Philo	tlg0018/tlg024	3.22	ἀδελφὴν	μὴ ἀδελφὴν ἄγεσθαι γυναῖκα	B	Incest law prohibition — biological sister
+24	Philo	tlg0018/tlg002	3.242	ἀδελφὰς	συγγενεῖς καὶ ἀδελφὰς ἀρετάς	E	"Sister-virtues" (peace and priesthood) — metaphorical
+25	Philo	tlg0018/tlg024	2.73	ἀδελφούς	καλέσας εὐθυβόλως "ἀδελφούς"	D	Spec. Leg. — Mosaic code calling Israelites "brothers" (covenantal)
+26	Philo	tlg0018/tlg014	60	ἀδελφαὶ	ἀφροσύναι καὶ ἀδικίαι καὶ αἱ τούτων συγγενεῖς καὶ ἀδελφαὶ	E	Vices personified with "sister" kin terms — metaphorical
+27	Philo	tlg0018/tlg026	148	ἀδελφοὺς	τέκνα γονέων καὶ γονεῖς τέκνων καὶ ἀδελφοὺς ἀδελφῶν ὑπεριδεῖν	B	Civil strife causing biological kin to disown each other
+28	Philo	tlg0018/tlg025	61	ἀδελφοῖς	ἀδελφοῖς Α τούτοις Richt. (apparatus only)	C	Critical-apparatus fragment — insufficient context
+29	Philo	tlg0018/tlg026	74	ἀδελφοκτόνου	τὰ ὁρισθέντα κατὰ τοῦ πρώτου γεγονότος ἀδελφοκτόνου	B	"First brother-killer" = Cain (biological)
+30	Philo	tlg0018/tlg031	87	φιλαδελφίαν	ἐμιμήσω τοὺς Διοσκούρους εἰς φιλαδελφίαν; ἵνα ἐντεῦθεν ἄρξωμαι. τὸν μὲν ἀδελφὸν καὶ συγκληρονόμον ἐν	B	bulk-classified (n=100 expansion pass)
+31	Philo	tlg0018/tlg021	235	ἀδελφόν	οἰκειότητος τῆς πρὸς τὸν συκοφαντούμενον ἀδελφόν	B	Joseph's brothers — biological
+32	Philo	tlg0018/tlg015	291	ἀδελφὸν	τὸ γέρως ἀδελφὸν καὶ παρώνυμον καλὸν γῆρας	E	Old age as "brother of honour" — metaphorical personification
+33	Philo	tlg0018/tlg022	1.84	ἀδελφὸν	ὑποδιακονικὸν στόμα τὸν ἀδελφὸν ἕξεις	B	Moses using Aaron "the brother" as spokesman — biological
+34	Philo	tlg0018/tlg024	3.14	ἀδελφαῖς	πατρὸς συνεῖναι γαμετῇ καὶ τηθίσι καὶ ἀδελφαῖς	B	Incest prohibitions — biological sisters
+35	Philo	tlg0018/tlg019	1.251	ἀδελφὴν	τὴν ἀδελφὴν ἰατρικῆς	E	"Sister of medicine" (a related art) — metaphorical
+36	Philo	tlg0018/tlg002	1.30	ἀδελφὸν	ἡ δὲ ὁρμή τὸ ἀδελφὸν τῆς φαντασίας	E	Impulse as "brother of imagination" — metaphorical/conceptual
+37	Philo	tlg0018/tlg011	70	ἀδελφὸν	διὰ τοῦτο καὶ „ἀδελφόν“, οὐκ ἄνθρωπον, ἀλλὰ τὸ ψυχῆς ἀδελφὸν σῶμα ἀποκτενοῦμεν, τουτέστι τοῦ φιλαρέτου καὶ θείου τὸ φιλο	E	bulk-classified (n=100 expansion pass)
+38	Philo	tlg0018/tlg026	68	ἀδελφοκτόνος	κατ’ ἀρχὰς εὐθύς, ὅτ’ οὔπω τὸ τῶν ἀνθρώπων γένος ἐπλήθυνεν, ἀδελφοκτόνος. οὗτός ἐστιν ὁ πρῶτος ἐναγής, ὁ πρῶτος καθαρευούσῃ τῇ γῇ μί	B	bulk-classified (n=100 expansion pass)
+39	Philo	tlg0018/tlg031	84	ἀδελφὸν	φιλαυτῆσαι μᾶλλον ἢ πρὸς τὸν ἀδελφὸν εὔνοιαν ἐπιδείξασθαι	B	Likely Legatio/Flaccum — royal sibling dynamic, biological
+40	Philo	tlg0018/tlg021	164	τἀδελφῷ	καὶ οἱ μὲν εἰς Αἴγυπτον ἐλθόντες ἐντυγχάνουσιν ὡς ἀλλοτρίῳ τἀδελφῷ καὶ τὴν περὶ αὐτὸν ἀξίωσιν καταπλαγέντες ἔθει παλαιῷ προσκυ	B	bulk-classified (n=100 expansion pass)
+41	Philo	tlg0018/tlg027	1	ἀδελφὸς	μεθα· οὑτοσὶ δ’ ἐκείνου συγγενής, ὁμοπάτριος καὶ ὁμομήτριος ἀδελφὸς καὶ τρόπον τινὰ δίδυμος, καθ’ ὃν ἐπιδείξομεν, ὅτι πᾶς ὁ ἀστ	B	bulk-classified (n=100 expansion pass)
+42	Philo	tlg0018/tlg011	67	ἀδελφῷ	ἐπληρώσατε τὰς χεῖρας σήμερον κυρίῳ, ἕκαστος ἐν τῷ υἱῷ ἢ τῷ ἀδελφῷ, δοθῆναι ἐφ’ ὑμᾶς εὐλογίαν“ (Exod. 32,29).	B	bulk-classified (n=100 expansion pass)
+43	Philo	tlg0018/tlg014	208	ἀδελφοῦ	μέρας τινάς, ἕως τοῦ ἀποστρέψαι τὸν θυμὸν καὶ τὴν ὀργὴν τοῦ ἀδελφοῦ σου ἀπὸ σοῦ, καὶ ἐπιλάθηται ἃ πεποίηκας αὐτῷ“ (Gen. 27, 43	B	bulk-classified (n=100 expansion pass)
+44	Philo	tlg0018/tlg021	15	ἀδελφὸν	Ἀραβίας εἰς Αἴγυπτον κομίζειν φόρτον· οἷς ἀνελκύσαντες τὸν ἀδελφὸν πιπράσκουσιν, ἡγησαμένου τὴν γνώμην τοῦ καθ’ ἡλικίαν τετάρτ	B	bulk-classified (n=100 expansion pass)
+45	Philo	tlg0018/tlg031	88	ἀδελφῶ	17 αὑτῶ AH: αὐτῶ ceteri δ’ A ἁ ἀδελφῶ δὲ transp. M	C	bulk-classified (n=100 expansion pass)
+46	Philo	tlg0018/tlg031	26	ἀδελφόν	ν τέλει „βούλομαι μὲν“ ἔφη „τὸν γένει μὲν ἀνεψιὸν εὐνοίᾳ δὲ ἀδελφόν, ἑπόμενος καὶ τῇ τοῦ τετελευτηκότος Τιβερίου γνώμῃ, κοινοπρ	C	bulk-classified (n=100 expansion pass)
+47	Philo	tlg0018/tlg021	200	ἀδελφὸν	καὶ θεοφιλέστατον προσειπών, τὸν ὁμομήτριον περιβλεψάμενος ἀδελφὸν ὡς εἶδεν, οὐ κατασχὼν ἀλλ’ ἤδη νικώμενος ὑπὸ τοῦ πάθους, πρ	B	bulk-classified (n=100 expansion pass)
+48	Philo	tlg0018/tlg005	132	ἀδελφός	τοῦ τελειοτάτου Μωυσέως· ἐπεὶ τίνος ἕνεκα τῷ „ἰδοὺ Ἀαρὼν ὁ ἀδελφός σου“ προσέθηκεν „ὁ	B	bulk-classified (n=100 expansion pass)
+49	Philo	tlg0018/tlg021	175	ἀδέλφ	78 p. 820): ἐπειδὴ γέγραφας, δι’ ἣν αἰτίαν τοὺς ἄλλους ἀδέλφ’ οὑς παρεὶς ὁ Ἰωσὴφ τὸν Σιμεῶνα μόνον ἐκέλευσε δεθῆναι, ὅμη	B	bulk-classified (n=100 expansion pass)
+50	Philo	tlg0018/tlg021	170	ἀδελφὸν	ὶ κατηφείας γεμισθέντες ἐκάκιζον ἑαυτοὺς ἕνεκα τῆς πρὸς τὸν ἀδελφὸν ἐπιβουλῆς „ἐκεῖνο“ λέγοντες „τἀδίκημα τῶν παρόντων ἐστὶ κακ	B	bulk-classified (n=100 expansion pass)
+51	Philo	tlg0018/tlg024	3.23	ἀδελφὰς	κακὸν σώμασι καὶ ψυχαῖς ἀκρασίαν καὶ παρασχὼν ἄδειαν ἁπάσας ἀδελφὰς ἄγεσθαι, τάς τε ἰδίας τοῦ ἑτέρου τῶν γονέων, τοῦδε ἢ τοῦδε,	B	bulk-classified (n=100 expansion pass)
+52	Philo	tlg0018/tlg017	211	ἀδελφῶν	ν προσυπογράφει χαρακτῆρα φάσκων· "κατὰ πρόσωπον πάντων τῶν ἀδελφῶν κατοικήσει“ (ibid.), μονονοὺκ ἄντικρυς ἐπιδεικνύμενος	D	bulk-classified (n=100 expansion pass)
+53	Philo	tlg0018/tlg005	1	ἀδελφὸν	το ἐν τῷ εἶναι αὐτοὺς ἐν τῷ πεδίῳ, ἀνέστη Κάιν ἐπὶ Ἄβελ τὸν ἀδελφὸν αὐτοῦ καὶ ἀπέκτεινεν αὐτόν“ (Gen. 4, 8). ὃ βούλεται ὁ Κάιν	B	bulk-classified (n=100 expansion pass)
+54	Philo	tlg0018/tlg022	1.99	ἀδελφοῦ	τί οὖν οὐκ εἰς μακρὰν συνέβη; τοῦ Μωυσέως ἀδελφοῦ προστάξει θείᾳ κατενεγκόντος τὴν βακτηρίαν ἐπὶ τὸν ποταμόν,	B	bulk-classified (n=100 expansion pass)
+55	Philo	tlg0018/tlg022	2.278	ἀδελφῷ	ἀθροιζόμενοι κατεβόων τοῦ προφήτου, ὡς δι’ οἰκειότητα τῷ τε ἀδελφῷ καὶ τοῖς	B	bulk-classified (n=100 expansion pass)
+56	Philo	tlg0018/tlg006	109	ἀδελφοῖς	, τῶν μὲν φύσει δοῦλος, τῶν δὲ γένει δεσπότης ὤν; τίς δ’ ἂν ἀδελφοῖς καὶ ἀνεψιοῖς ἢ συνόλως τοῖς ἐγγὺς γένους καὶ μακρὰν οὖσιν;	B	bulk-classified (n=100 expansion pass)
+57	Philo	tlg0018/tlg021	193	ἀδελφὸν	4 τὸν ἐν δεσμοῖς ἀδελφὸν AO	B	bulk-classified (n=100 expansion pass)
+58	Philo	tlg0018/tlg005	67	ἀδελφὸς	6 ὁ ἀδελφὸς UF: ὁ om. HL	C	bulk-classified (n=100 expansion pass)
+59	Philo	tlg0018/tlg024	1.119	ἀδελφῶν	6 μηδὲ ἀδελφῶν ΑΗ (Turn.)	C	bulk-classified (n=100 expansion pass)
+60	Philo	tlg0018/tlg019	2.111	ἀδελφοί	μήτηρ σου καὶ οἱ ἀδελφοί σου προσκυνῆσαί σοι ἐπὶ τὴν γῆν; ἐζήλωσαν δὲ αὐτὸν οἱ ἀδελφ	B	bulk-classified (n=100 expansion pass)
+61	Philo	tlg0018/tlg024	3.67	ἀδελφὸν	12 ἀδελφὸν μὲν καὶ om. S (fort. recte) συγγενὲς δὲ G	C	bulk-classified (n=100 expansion pass)
+62	Philo	tlg0018/tlg024	3.29	ἀδελφαὶ	14 ἀδελφαὶ Barb. (coni. Mang.): ἀδελφῆς F, ἀδελφὰ ceteri (v) εἰ om. F	C	bulk-classified (n=100 expansion pass)
+63	Philo	tlg0018/tlg021	178	ἀδελφῶν	ντος τοῦ τῆς χώρας ἐπιτρόπου τοῖς πυροπωλοῦσι τὰ ἀγγεῖα τῶν ἀδελφῶν	B	bulk-classified (n=100 expansion pass)
+64	Philo	tlg0018/tlg024	2.127	ἀνάδελφός	οὺς καὶ θυγατέρας ἐν συγγενείαις τάξις ἀδελφῶν ἐστιν. εἰ δὲ ἀνάδελφός τις εἴη τελευτῶν, θεῖοι πρὸς πατρὸς διαδεχέσθωσαν τὴν οὐσία	B	bulk-classified (n=100 expansion pass)
+65	Philo	tlg0018/tlg014	3	ἀδελφόν	λυόμενον εἰς τὰ δεθέντα λύεσθαι—, αἴσθησις δὲ συγγενὲς καὶ ἀδελφόν ἐστι διανοίας, ἄλογον λογικῆς, ἐπειδὴ μιᾶς ἄμφω μέρη ψυχῆς	E	bulk-classified (n=100 expansion pass)
+66	Philo	tlg0018/tlg005	62	ἀδελφοῦ	ὁ δέ γε καὶ ἐπινεανιεύεται φάσκων· „μὴ φύλαξ τοῦ ἀδελφοῦ	B	bulk-classified (n=100 expansion pass)
+67	Philo	tlg0018/tlg005	5	ἀδελφοί	οἱ ἀδελφοί σου ποιμαίνουσιν ἐν Συχέμ; δεῦρο ἀποστείλω σε πρὸς αὐτούς.	B	bulk-classified (n=100 expansion pass)
+68	Philo	tlg0018/tlg017	4	ἀδελφὸν	ῦν ἀσκητὴς Ἰακὼβ μίσει μὲν τὸν πενθερὸν Λάβαν, φόβῳ δὲ τὸν ἀδελφὸν Ἠσαῦ	B	bulk-classified (n=100 expansion pass)
+69	Philo	tlg0018/tlg019	2.108	ἀδελφοὶ	οἱ μὲν ἀδελφοὶ καταλλακτηρίους ποιήσονται συμβάσεις, τὸ μῖσος εἰς φιλίαν κ	B	bulk-classified (n=100 expansion pass)
+70	Philo	tlg0018/tlg031	87	ἀδελφὰς	ἀδελφὰς ὕστερον ἐφυγάδευσας· μὴ καὶ αὗται τὸν περὶ ἀφαιρέσεως ἀρχῆς	B	bulk-classified (n=100 expansion pass)
+71	Philo	tlg0018/tlg028	18	ἀδελφούς	ὐδενὸς ἔτι δελεαζόμενοι φεύγουσιν ἀμεταστρεπτὶ καταλιπόντες ἀδελφούς, τέκνα, γυναῖκας, γονεῖς, πολυανθρώπους συγγενείας, φιλικὰς	B	bulk-classified (n=100 expansion pass)
+72	Philo	tlg0018/tlg005	165	ἀδελφὰς	ἀναιρεθήσεται, ἀλλὰ ῥᾳδιουργοὶ μὲν ἀδελφὰς καὶ συγγενεῖς κακίας ἐζηλωκότες φρουροὶ καὶ φύλακες αὐτοῦ γ	E	bulk-classified (n=100 expansion pass)
+73	Philo	tlg0018/tlg031	88	ἀδελφὸν	23 διοσκόρους H ἴν’ Α μὲν] δ’ A ἀδελφὸν] ἀνεφιὸν coni. Mang. 7.11 om. A	C	bulk-classified (n=100 expansion pass)
+74	Philo	tlg0018/tlg026	109	ἀδελφιδοῦς	, ἀδελφούς, ἀδελφιδοῦς, υἱωνούς, θυγατριδοῦς, ἀνεψιούς,	B	bulk-classified (n=100 expansion pass)
+75	Philo	tlg0018/tlg022	1.97	ἀδελφῷ	ξ ὧν ἀπετελέσθησαν αἱ σωματικαὶ ποιότητες, ἐφεὶς τῷ Μωυσέως ἀδελφῷ, τὰς δ’ ἴσας ἐξ ἀέρος καὶ πυρὸς τῶν ψυχογονιμωτάτων μόνῳ Μω	B	bulk-classified (n=100 expansion pass)
+76	Philo	tlg0018/tlg024	4.135	ἀδελφὰ	σωφροσύνης εἴρηται πρότερον, νυνὶ δὲ περὶ τῆς ἐπιτηδευούσης ἀδελφὰ καὶ συγγενῆ ταύταις δικαιοσύνης λεκτέον.	E	bulk-classified (n=100 expansion pass)
+77	Philo	tlg0018/tlg021	179	ἀδελφὸν	ὁδοιπορούντων δὲ καὶ τὸν ἐν δεσμοῖς ἀδελφὸν ὡς εἰκὸς οἰκτιζομένων, οὐχ ἧττον δ’ ἐπὶ	B	bulk-classified (n=100 expansion pass)
+78	Philo	tlg0018/tlg011	71	ἀδελφὸν	οῦς μεθέλκηται, δύνηται δ’ ἀπηλλαγμένος πάντως τῶν κατὰ τὸ „ἀδελφὸν“ σῶμα ἡδονῶν, τῶν κατὰ τὰς „πλησίον“ καὶ ἀγχιθύρους αἰσθήσε	E	bulk-classified (n=100 expansion pass)
+79	Philo	tlg0018/tlg021	185	ἀδελφῶν	καὶ περί τε σοῦ τοῦ πατρὸς διεξιόντων καὶ τῶν ἀπολειπομένων ἀδελφῶν, ἑνὸς μὲν τοῦ τεθνεῶτος, ἑτέρου δὲ τοῦ παρὰ σοὶ διατρίβοντο	B	bulk-classified (n=100 expansion pass)
+80	Philo	tlg0018/tlg021	175	ἀδελφῶν	6 τῶν ἀδελφῶν] ἀδελφὸς AO καὶ om. F συντεθειμένων CV 6.	B	bulk-classified (n=100 expansion pass)
+81	Philo	tlg0018/tlg014	159	ἀδελφοὶ	αὐτοῦ Ἰωσὴφ καὶ οἱ ἀδελφοὶ αὐτοῦ καὶ πᾶσα ἡ οἰκία ἡ πατρικὴ αὐτοῦ“ (Gen. 50, 7. 8).	B	bulk-classified (n=100 expansion pass)
+82	Philo	tlg0018/tlg018	92	ἀδελφὸν	καὶ μὴν τὸν ἀδελφὸν αὐτοῦ τὸν ὁμογάστριον ὁ μὲν πατὴρ Βενιαμίν, ἡ δὲ μήτηρ υἱὸν	B	bulk-classified (n=100 expansion pass)
+83	Philo	tlg0018/tlg005	63	ἀδελφὸς	ι τῆς λειτουργίας, καὶ οὐκ ἐργάσεται ἔτι, λειτουργήσει δὲ ὁ ἀδελφὸς αὐτοῦ· ὁ δὲ φυλάξει φυλακάς, ἔργα δὲ οὐκ ἐργάσεται“ (Num. 8	D	bulk-classified (n=100 expansion pass)
+84	Philo	tlg0018/tlg024	3.26	ἀδελφοῦ	ἢ μητρός, μὴ θείου ἢ υἱοῦ ἢ ἀδελφοῦ γυναῖκα γενομένην ἐγγυᾶσθαι, μηδ’ αὖ προγονὴν ἢ χήραν ἢ παρ	B	bulk-classified (n=100 expansion pass)
+85	Philo	tlg0018/tlg011	90	ἀδελφὰ	εται τὴν αὐτὴν ἁπάσαις ἰδέαν, ὡς ταύτῃ μάλιστα συγγενῆ· καὶ ἀδελφὰ καὶ δίδυμα τὰ δημιουργηθέντα γενέσθαι.	E	bulk-classified (n=100 expansion pass)
+86	Philo	tlg0018/tlg022	2.273	ἀδελφῶν	4 ἀδήλων] ἀδελφῶν Κ	C	bulk-classified (n=100 expansion pass)
+87	Philo	tlg0018/tlg031	93	φιλαδελφωτάτοις	23 γοῦν A ἐγγράφου Α (Mang.) φιλαδελφωτάτοις L	E	bulk-classified (n=100 expansion pass)
+88	Philo	tlg0018/tlg024	4.157	ἀδελφῶν	αστήσεις ἐπὶ σεαυτὸν ἄρχοντα οὐκ ἀλλότριον, ἀλλ’ ἐκ τῶν σῶν ἀδελφῶν, δηλῶν ἐθελούσιον αἵρεσιν καὶ δοκιμασίαν ἀνεπίληπτον ἄρχοντ	D	bulk-classified (n=100 expansion pass)
+89	Philo	tlg0018/tlg022	1.103	ἀδελφὸς	ἀδελφὸς κελευσθεὶς διώρυξι καὶ λίμναις καὶ ἕλεσι τὴν ῥάβδον ἐκτείνα	B	bulk-classified (n=100 expansion pass)
+90	Philo	tlg0018/tlg025	61	ἀδελφοί	5 σοι] σου H1P ἀδελφοί Α μὲν S: μέντοι ceteri (v)	C	bulk-classified (n=100 expansion pass)
+91	Philo	tlg0018/tlg018	171	ἀδελφῶν	ἐχάρη Φαραὼ καὶ ἡ θεραπεία αὐτοῦ“ (Gen. 45, 16) διὰ τὴν τῶν ἀδελφῶν Ἰωσὴφ ἄφιξιν, μὴ νόμιζε πρὸς ἀλήθειαν ἥδεσθαι, εἰ μὴ κατ’ ἐ	B	bulk-classified (n=100 expansion pass)
+92	Philo	tlg0018/tlg024	1.297	ἀδελφόν	ἑτέρου δὲ τοῦ καὶ νύκτωρ ἀδελφόν τι καὶ συγγενὲς ταῖς μεθημεριναῖς θυσίαις ἐπιτελεῖσθαι πρὸς	E	bulk-classified (n=100 expansion pass)
+93	Philo	tlg0018/tlg027	59	ἀδελφῷ	5 τῷ ἀδελφῷ] τἀδελφὼ Α	C	bulk-classified (n=100 expansion pass)
+94	Philo	tlg0018/tlg021	9	ἀδελφοὺς	ἕνδεκα ἀδελφοὺς ὑποσημαίνειν ἔοικας—· ὃ μηδὲ εἰς νοῦν ποτε ἔλθοι τὸν σόν, ὦ	B	bulk-classified (n=100 expansion pass)
+95	Philo	tlg0018/tlg005	25	ἀδελφούς	ῖν τοὺς ἐπιστήμης λόγους καὶ ποθεῖν ὡς τοὺς ἐγγυτάτω γένους ἀδελφούς, μὴ πάνυ πιστεύωμεν αὐτῇ· οὐ γὰρ ἂν ἐπυνθάνετο „ποῦ βόσκουσ	E	bulk-classified (n=100 expansion pass)
+96	Philo	tlg0018/tlg017	23	ἀδελφός	ησομένου. „εἶπε“ γάρ φησι „Ῥεβέκκα πρὸς Ἰακώβ· ἰδού, Ἠσαῦ ὁ ἀδελφός σου ἀπειλεῖ	B	bulk-classified (n=100 expansion pass)
+97	Philo	tlg0018/tlg031	54	ἀδελφοί	ν γὰρ ἐξ ἔτι σπαργάνων μυρίοι διδάσκαλοι γεγόνασι, πατέρες, ἀδελφοί, θεῖοι, ἀνεψιοί, πάπποι, πρόγονοι μέχρι τῶν	B	bulk-classified (n=100 expansion pass)
+98	Philo	tlg0018/tlg020	234	ἀδελφιδοῦν	κατεστόρεσε, τὸν δὲ ἀδελφιδοῦν ἀνήγαγε μετὰ λαμπρᾶς καὶ ἐπιφανεστάτης νίκης ἅπασαν τὴν ἵππ	B	bulk-classified (n=100 expansion pass)
+99	Philo	tlg0018/tlg021	223	ἀδελφοῦ	21 τοῦ ἀδελφοῦ HP ἀδελφῶν F καὶ περὶ πατρὸς BEKM πρεσβύτερος C	B	bulk-classified (n=100 expansion pass)
+100	Philo	tlg0018/tlg018	170	ἀδελφοὺς	οὺς Αἰγυπτίους χαίρειν ἂν εἴποιμι πρὸς ἀλήθειαν, ἡνίκα τοὺς ἀδελφοὺς Ἰωσὴφ ἥκοντας ἤκουσαν, ἀλλ’ ἐπιμορφάζειν καθυποκρινομένους	B	bulk-classified (n=100 expansion pass)

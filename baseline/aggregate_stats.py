@@ -21,21 +21,25 @@ def wilson_ci(k, n, z=1.96):
 
 
 # Bucket counts: (A, B, C, D, E) — total = sum
+#
+# The three literary buckets were expanded from n=35/36 to n=100 in an
+# n=100 expansion pass (classifications in baseline/data/*_n100.tsv).
+# Papyri, LXX, Josephus remain at n=35 pending agent re-sampling.
 BUCKETS = {
     # Baseline (contemporary-or-earlier, non-Christian)
-    'Papyri (pre-70 CE)':        (0, 35, 0, 0, 0),    # reclassified: all Ptolemaic sister-wives are B
-    'LXX':                       (0, 24, 2, 9, 0),    # agent-provided
-    'Josephus':                  (0, 21, 2, 12, 0),   # agent-provided
-    'Philo':                     (1, 20, 1, 2, 11),   # coder-classified
-    'Hellenistic literary':      (0, 29, 0, 1, 6),    # coder-classified (Plutarch+Epictetus+Dio)
-    'Pre-Pauline literary':      (1, 34, 0, 0, 1),    # coder-classified (Polybius+Strabo+Diodorus)
+    'Papyri (pre-70 CE)':        (0, 35, 0, 0, 0),     # n=35; Ptolemaic sister-wives = biological
+    'LXX':                       (0, 24, 2, 9, 0),     # n=35; agent-classified
+    'Josephus':                  (0, 21, 2, 12, 0),    # n=35; agent-classified
+    'Philo (n=100)':             (1, 63, 11, 5, 20),   # n=100; coder-classified (expansion pass)
+    'Hellenistic literary (n=100)': (0, 94, 1, 0, 5),  # n=100; Plutarch+Epictetus+Dio
+    'Pre-Pauline literary (n=100)': (2, 96, 0, 1, 1),  # n=100; Polybius+Strabo+Diodorus
 
     # Downstream (post-Pauline Christian — for contextual comparison, NOT prior)
-    '[CONTEXT] NT non-Pauline letters': (33, 1, 1, 0, 0),  # agent-provided
-    '[CONTEXT] Gospels + Acts':         (14, 18, 1, 2, 0),  # agent-provided
+    '[CONTEXT] NT non-Pauline letters': (33, 1, 1, 0, 0),  # agent-classified
+    '[CONTEXT] Gospels + Acts':         (14, 18, 1, 2, 0),  # agent-classified
 
     # Reference point
-    '[REFERENCE] Pauline (undisputed)': (117, 0, 4, 0, 0),  # from earlier classification (incl Rom 9:3 → C, not D)
+    '[REFERENCE] Pauline (undisputed)': (117, 0, 3, 1, 0),  # harmonised A/B/C/D/E (Rom 9:3 → D)
 }
 
 
