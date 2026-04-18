@@ -157,6 +157,7 @@ and supplements for detailed evidence.
 | `RESPONSES.md` | Anticipated reviewer critiques with cross-referenced responses |
 | `FALSIFICATION.md` | Explicit falsification conditions in both directions |
 | `PRESENTATION.md` | Slide-format summary (Pandoc-convertible) |
+| `NYT-STYLE.md` | General-audience long-form summary in newspaper-feature style (~2,500 words) |
 | `LICENSE` | CC BY-NC 4.0 |
 
 ---
