@@ -150,6 +150,10 @@ and supplements for detailed evidence.
 | `baseline/stylometry_report.md` | Stylometric analysis output |
 | `baseline/bayesian_report.md` | Bayesian sensitivity output |
 | `TODO.md` | Comprehensive research-directions inventory |
+| `GLOSSARY.md` | Technical terms, Greek transliterations, and classification scheme |
+| `RESPONSES.md` | Anticipated reviewer critiques with cross-referenced responses |
+| `FALSIFICATION.md` | Explicit falsification conditions in both directions |
+| `PRESENTATION.md` | Slide-format summary (Pandoc-convertible) |
 | `LICENSE` | CC BY-NC 4.0 |
 
 ---
