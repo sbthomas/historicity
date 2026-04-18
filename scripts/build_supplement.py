@@ -33,7 +33,7 @@ CLASSIFICATIONS = {
     # Romans
     "Rom 1:13": ["A"], "Rom 7:1": ["A"], "Rom 7:4": ["A"],
     "Rom 8:12": ["A"], "Rom 8:29": ["A"],
-    "Rom 9:3": ["C"],           # "brothers according to the flesh" — ethnic idiom
+    "Rom 9:3": ["D"],           # "brothers according to the flesh" — ethnic/covenantal (fellow Israelites)
     "Rom 10:1": ["A"], "Rom 11:25": ["A"], "Rom 12:1": ["A"],
     "Rom 12:10": ["A"],         # philadelphia
     "Rom 14:10": ["A", "A"], "Rom 14:13": ["A"], "Rom 14:15": ["A"],

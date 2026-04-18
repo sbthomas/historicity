@@ -31,11 +31,14 @@ The responsible conclusion is that the evidence does not establish the historici
 | `historicity.tex` | LaTeX source of the main paper |
 | `historicity.bib` | BibTeX bibliography (~60 entries) |
 | `historicity.pdf` | Compiled PDF of the current draft |
-| `historicity-supplement.tex` | Supplementary material (XeLaTeX) |
-| `historicity-supplement.pdf` | Compiled supplement: colour-coded *adelph-* occurrences |
-| `supplement_body.tex` | Generated body of the supplement (full Greek text with markup) |
+| `historicity-supplement.tex` | Supplement 1: Pauline occurrences (XeLaTeX) |
+| `historicity-supplement.pdf` | Compiled: colour-coded *adelph-* occurrences in the seven undisputed letters |
+| `supplement_body.tex` | Generated body of supplement 1 (full Greek text with markup) |
+| `historicity-baseline.tex` | Supplement 2: corpus-linguistic baseline (XeLaTeX) |
+| `historicity-baseline.pdf` | Compiled: *adelph-* in contemporary non-Christian Greek (base rate for Bayesian prior) |
 | `scripts/build_supplement.py` | Generator that produces `supplement_body.tex` from SBLGNT |
 | `scripts/sblgnt/` | SBL Greek New Testament text of the seven letters (CC BY 4.0) |
+| `baseline/` | Corpus-linguistic baseline study: classified samples (212 tokens across six non-Christian corpora), Wilson-CI statistics script, classification scheme |
 
 ## Building from source
 
@@ -56,15 +59,20 @@ Or with `latexmk`:
 latexmk -pdf historicity
 ```
 
-### Supplement
+### Supplements
 
-The supplement requires **XeLaTeX** (for Unicode Greek text) and the
+Both supplements require **XeLaTeX** (for Unicode Greek text) and the
 **STIX Two Text** font (ships with macOS; available via `texlive-fonts-extra`
 on Linux or directly from <https://github.com/stipub/stixfonts>).
 
 ```bash
+# Supplement 1: Pauline adelph- occurrences, colour-coded
 xelatex historicity-supplement
 xelatex historicity-supplement
+
+# Supplement 2: contemporary-Greek baseline study
+xelatex historicity-baseline
+xelatex historicity-baseline
 ```
 
 To regenerate `supplement_body.tex` from the SBLGNT source (normally only
@@ -72,6 +80,13 @@ needed if the classification table in `scripts/build_supplement.py` changes):
 
 ```bash
 python3 scripts/build_supplement.py
+```
+
+To recompute the baseline statistics (per-bucket A/B/C/D/E proportions with
+Wilson 95% CIs):
+
+```bash
+python3 baseline/aggregate_stats.py
 ```
 
 ### Package requirements
