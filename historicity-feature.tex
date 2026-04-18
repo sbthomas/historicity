@@ -1,9 +1,9 @@
-%%% historicity-feature.tex — General-audience long-form article
+%%% historicity-feature.tex — Personal essay for general audience
 %%% Compile: xelatex historicity-feature && xelatex historicity-feature
 
 \documentclass[11pt,oneside]{article}
 
-\usepackage[letterpaper,top=1.1in,bottom=1.1in,left=1.4in,right=1.4in,headheight=14pt]{geometry}
+\usepackage[letterpaper,top=0.6in,bottom=1.0in,left=1.2in,right=1.2in,headheight=14pt]{geometry}
 \usepackage{fontspec}
 \usepackage{xcolor}
 \usepackage{fancyhdr}
@@ -11,7 +11,6 @@
 \usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage{caption}
-\captionsetup{font={small,it},labelformat=empty,justification=raggedright,singlelinecheck=false}
 \IfFileExists{lettrine.sty}%
   {\usepackage{lettrine}}%
   {\providecommand{\lettrine}[3][]{\textbf{\Large ##2}##3}}
@@ -21,6 +20,8 @@
   {\providecommand{\enquote}[1]{``##1''}}
 \usepackage[colorlinks=true,linkcolor=black,urlcolor=blue!45!black,citecolor=black]{hyperref}
 
+\captionsetup{font={small,it},labelformat=empty,justification=justified,singlelinecheck=false}
+
 %% –– Fonts ––
 \defaultfontfeatures{Ligatures=TeX}
 \setmainfont{Palatino}[
@@ -29,11 +30,11 @@
 \newfontfamily\smallcapsfont{Palatino}[Letters=SmallCaps]
 \newfontfamily\headlinefont{Palatino}
 
-%% –– Newspaper-style accent colour (NYT masthead-like muted near-black) ––
+%% –– Accent colours ––
 \definecolor{rule}{HTML}{1A1A1A}
-\definecolor{accent}{HTML}{7D1F1F}   % muted burgundy for ornamental dashes
+\definecolor{accent}{HTML}{7D1F1F}
 
-%% –– Section-heading style: italic serif, small, left-aligned ––
+%% –– Section heads ––
 \titleformat{\section}
   {\normalsize\itshape\filcenter}
   {}
@@ -41,18 +42,15 @@
   {}
 \titlespacing*{\section}{0pt}{1.5em}{0.8em}
 
-%% –– Headers ––
 \pagestyle{fancy}
 \fancyhf{}
 \fancyfoot[C]{\thepage}
 \renewcommand{\headrulewidth}{0pt}
 
-%% –– Text settings ––
 \setlength{\parindent}{1.2em}
 \setlength{\parskip}{0pt}
 \onehalfspacing
 
-%% –– Ornamental rule between sections ––
 \newcommand{\sectbreak}{%
   \par\vspace{1.3em}
   \noindent\hfil
@@ -64,102 +62,102 @@
 \pagestyle{empty}
 
 %% ============================================================
-%%  HEADLINE BLOCK
+%%  HERO IMAGE — full textwidth at top of page 1
 %% ============================================================
 
-\begin{center}
-  \vspace*{0.3in}
-  {\color{rule}\rule{\textwidth}{0.5pt}}\\
-  \vspace{0.4em}
-  {\smallcapsfont\small the historicity question}\\
-  \vspace{0.3em}
-  {\color{rule}\rule{\textwidth}{0.5pt}}
-  \vspace{1.6em}
+\noindent
+\includegraphics[width=\textwidth]{figures/jesus-forensic-reconstruction.png}
 
+\vspace{0.4em}
+
+\begin{minipage}{\textwidth}\footnotesize\itshape
+An AI-generated reconstruction of what a first-century Galilean man
+in his early thirties might plausibly have looked like, informed by
+ancient DNA studies of Roman-period Judean skeletal remains,
+forensic anthropology of the region, and the cultural and occupational
+context of the Jewish artisan class.  The image follows the logic of
+Richard Neave's 2001 forensic reconstruction---that Jesus, if
+historical, would not have resembled the pale, long-haired figure of
+European artistic tradition---but is a type study of a first-century
+Galilean man, not a portrait of any specific historical individual.
+\end{minipage}
+
+\vspace{1.6em}
+
+{\color{rule}\rule{\textwidth}{0.5pt}}\\
+\vspace{0.3em}
+\begin{center}
+{\smallcapsfont\small the historicity question}
+\end{center}
+\vspace{0.2em}
+{\color{rule}\rule{\textwidth}{0.5pt}}
+
+\vspace{1.4em}
+
+\begin{center}
   {\headlinefont\huge\bfseries
    Two Thousand Years Later, a New Question\\[0.15em]
    About the Most Famous Man in History}\par
 
-  \vspace{1em}
+  \vspace{0.9em}
 
   {\Large\itshape
-   The consensus says he existed. A new paper\\
-   says the evidence is thinner than that\\
-   consensus lets on.}\par
+   The consensus says he existed.  I have spent a year arguing\\
+   that the evidence is thinner than that consensus lets on.}\par
 
-  \vspace{1.8em}
+  \vspace{1.4em}
 
-  {\smallcapsfont\small By a General-Audience Summary}\par
-  {\small\itshape April 2026}\par
+  {\smallcapsfont\small By Stan Thomas}\par
+  {\small\itshape St.\ George, Utah\quad$\cdot$\quad April 2026}\par
 
   \vspace{0.4em}
   {\color{rule}\rule{0.4\textwidth}{0.4pt}}
 \end{center}
 
-\vspace{1.4em}
-
-%% –– Lead image ––
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.72\textwidth]{figures/jesus-forensic-reconstruction.png}
-  \caption{%
-    An AI-generated reconstruction of what a first-century Galilean man
-    in his early thirties might plausibly have looked like, informed by
-    ancient DNA studies of Roman-period Judean skeletal remains, forensic
-    anthropology of the region, and the cultural and occupational context
-    of the Jewish artisan class.  The image follows the logic of Richard
-    Neave's 2001 forensic reconstruction---that Jesus, if historical,
-    would not have resembled the pale, long-haired figure of European
-    artistic tradition---but is a \textit{type study} of a first-century
-    Galilean man, not a portrait of a specific historical individual.%
-  }
-\end{figure}
-
-\vspace{0.4em}
+\vspace{1.2em}
 
 \pagestyle{fancy}
 
 %% ============================================================
-%%  BODY
+%%  BODY — first person
 %% ============================================================
 
-\lettrine[lines=3,findent=2pt,nindent=0pt,loversize=0.15]{S}{tan} Thomas is
-not a theologian.
-He does not teach at a divinity school.  He does not have a book
-deal.  He lives in St.\ George, Utah, and in his spare time, over the
-past year, he has written an 85-page paper arguing that the case for
-the historical Jesus---the Galilean preacher crucified under Pontius
-Pilate around the year 30---is considerably weaker than most people,
-including most scholars, assume.
+\lettrine[lines=3,findent=2pt,nindent=0pt,loversize=0.15]{I}{} should
+say first what I am not.
+I am not a theologian.  I do not teach at a divinity school.  I do
+not have a book deal.  I live in St.\ George, Utah, and in my spare
+time over the past year I have written an 85-page paper arguing that
+the case for the historical Jesus---the Galilean preacher crucified
+under Pontius Pilate around the year 30---is considerably weaker
+than most people, including most scholars, assume.
 
 This is the kind of project that makes serious historians groan
-before they finish the abstract.  The field has seen this movie
-before.  In the late nineteenth century, a German scholar named Bruno
-Bauer argued that Jesus was a literary invention; the Dutch Radical
-school made similar claims a generation later; and more recently,
-figures like Richard Carrier and Raphael Lataster have made the case
-in forms that most biblical scholars consider an embarrassment to
-engage with.  Bart Ehrman, the University of North Carolina scholar
-who is the most prominent secular voice defending the historicity of
-Jesus, once observed that \enquote{virtually every competent scholar
-of antiquity, Christian or non-Christian, agrees} that Jesus existed.
+before they finish the abstract, and I want to be honest about why
+that reflex is usually correct.  The field has seen this movie
+before.  In the late nineteenth century, a German scholar named
+Bruno Bauer argued that Jesus was a literary invention; the Dutch
+Radical school made similar claims a generation later; and more
+recently, figures like Richard Carrier and Raphael Lataster have
+made the case in forms that most biblical scholars consider an
+embarrassment to engage with.  Bart Ehrman, the University of North
+Carolina scholar who is the most prominent secular voice defending
+the historicity of Jesus, once observed that \enquote{virtually
+every competent scholar of antiquity, Christian or non-Christian,
+agrees} that Jesus existed.
 
-So it is fair to ask why anyone should care about a new contribution
-to what looks like a settled question.  The short answer is that
-Thomas's paper does not actually try to prove that Jesus did not
-exist.  It tries to prove something narrower, and in some ways more
-disturbing to the scholarly field: that the confidence with which
-most experts assert his existence is not justified by the evidence
-they have.
-
-That claim, if taken seriously, changes what biblical scholarship is
-doing.
+So why am I adding another paper to what looks like a settled
+question?  The short answer is that I do not actually try to prove
+Jesus did not exist.  I try to prove something narrower, and in
+some ways more disturbing: that the confidence with which most
+experts assert his existence is not justified by the evidence they
+have.  That claim, if taken seriously, changes what biblical
+scholarship is doing.
 
 \sectbreak
 \section*{What we actually have}
 
-Start with Paul.  The letters of the Apostle Paul to the churches in
-Corinth, Rome, Galatia and elsewhere are the earliest Christian
+Start with Paul.  The letters of the Apostle Paul to the churches
+in Corinth, Rome, Galatia and elsewhere are the earliest Christian
 documents that survive.  They were written, scholars agree, in the
 50s~\textsc{ce}---within a generation of the supposed crucifixion,
 and fifteen to twenty years before any of the Gospels were composed.
@@ -179,55 +177,54 @@ What Paul describes, over and over, is a cosmic figure known to him
 and his communities through revelation (\textit{apokalypsis}, in
 Greek) and through the Hebrew scriptures read as encoded prophecy.
 \enquote{I did not receive it from a human source,} Paul writes in
-Galatians, \enquote{nor was I taught it, but I received it through a
-revelation of Jesus Christ.}
+Galatians, \enquote{nor was I taught it, but I received it through
+a revelation of Jesus Christ.}
 
 The single clearest biographical-sounding phrase in Paul's entire
-corpus is four words in his letter to the Galatians: \textit{adelphos
-tou kyriou}, \enquote{brother of the Lord,} used of a man named
-James in Jerusalem whom Paul says he met.  That phrase has carried
-enormous weight in modern scholarship.  Ehrman has called it,
-essentially by itself, decisive evidence for the historicity of
-Jesus: if Jesus had a biological brother whom Paul met, Jesus
-existed.
+corpus is four words in his letter to the Galatians:
+\textit{adelphos tou kyriou}, \enquote{brother of the Lord,} used
+of a man named James in Jerusalem whom Paul says he met.  That
+phrase has carried enormous weight in modern scholarship.  Ehrman
+has called it, essentially by itself, decisive evidence for the
+historicity of Jesus: if Jesus had a biological brother whom Paul
+met, Jesus existed.
 
-Thomas's paper---which is available as a preprint at
-\url{https://github.com/sbthomas/historicity}---agrees that the
-phrase is real.  But it argues that \enquote{brother} in Paul's
-Greek overwhelmingly does not mean biological sibling.  Of the 121
-times Paul uses the word \textit{adelphos} and its variants, 117
-refer to fellow members of the early Christian community---the
-\enquote{brothers in Christ} usage any reader of Paul's letters
-will recognize.  Zero of the remaining occurrences unambiguously
-denote a biological brother of anyone.  Which raises a question: if
-\enquote{brother} in Paul's corpus is overwhelmingly a community
-term, why is the single phrase \enquote{brother of the Lord} being
-translated as a kinship claim rather than as a community title?
+I agree the phrase is real.  What I argue in my paper is that
+\enquote{brother} in Paul's Greek overwhelmingly does not mean
+biological sibling.  Of the 121 times Paul uses the word
+\textit{adelphos} and its variants, 117 refer to fellow members of
+the early Christian community---the \enquote{brothers in Christ}
+usage any reader of Paul's letters will recognize.  Zero of the
+remaining occurrences unambiguously denote a biological brother of
+anyone.  Which raises a question: if \enquote{brother} in Paul's
+corpus is overwhelmingly a community term, why is the single phrase
+\enquote{brother of the Lord} being translated as a kinship claim
+rather than as a community title?
 
 \sectbreak
 \section*{A number nobody had calculated}
 
-This is where Thomas's paper does something that has not, to his
-knowledge, been done before.  He compiles a statistical sample of
-how the word \textit{adelphos} is actually used in Greek-language
-texts from the two centuries surrounding Paul's lifetime---ancient
-letters scrawled on papyrus, the Greek translation of the Hebrew
-Bible, the writings of Philo of Alexandria, the works of Josephus,
-Plutarch, Epictetus, Polybius, Strabo, Diodorus.  He draws 405
-random tokens, classifies each one, and computes the base rate for a
+This is where my paper does something that, to my knowledge, no
+one had done before.  I compiled a statistical sample of how the
+word \textit{adelphos} is actually used in Greek-language texts from
+the two centuries surrounding Paul's lifetime---ancient letters
+scrawled on papyrus, the Greek translation of the Hebrew Bible, the
+writings of Philo of Alexandria, the works of Josephus, Plutarch,
+Epictetus, Polybius, Strabo, Diodorus.  I drew 405 random tokens,
+classified each one, and computed the base rate for a
 \enquote{community of fellow members} usage.
 
 The rate is 0.7~percent.  Paul's rate is 96.7~percent.
 
-This extreme difference is not, as such, a proof of anything.
-Thomas is careful to note that his sample excludes a relevant
+This extreme difference is not, as such, a proof of anything.  I am
+careful in the paper to note that my sample excludes a relevant
 register: Greek inscriptions from religious associations across the
 eastern Mediterranean, where the word \textit{adelphoi} was the
 normal term for fellow members of cult societies.  A scholar named
 Philip Harland documented these inscriptions in a 2005 article.
-Among them are nine dedications to a deity called Theos Hypsistos
-at a Greek-Iranian frontier town called Tanais, where members of
-the association called themselves, formulaically, \enquote{adopted
+Among them are nine dedications to a deity called Theos Hypsistos at
+a Greek-Iranian frontier town called Tanais, where members of the
+association called themselves, formulaically, \enquote{adopted
 brothers who revere Theos Hypsistos}---structurally identical to
 Paul's \enquote{brothers of the Lord.}
 
@@ -252,27 +249,26 @@ supposed events, by authors whose identities we do not know, in
 Greek, for audiences that were not in Palestine.  None of them
 claims to be an eyewitness account.
 
-Biblical scholarship has for more than a century recognized that
-the narrative details of the Gospels are, to a strong degree,
-constructed from Hebrew Bible templates.  The passion narrative of
-Mark maps, verse by verse, onto Psalm~22 (\enquote{My God, my God,
-why have you forsaken me?}), Isaiah~53 (\enquote{he was numbered
-with the transgressors}), the Wisdom of Solomon 2--5, and
-Zechariah.  The ministry reprises the Elijah-Elisha miracle cycle.
-The birth narratives are transparently built from proof-texts, and
-Matthew's and Luke's birth narratives contradict each other so
-sharply that they cannot both be historical.
+Biblical scholarship has for more than a century recognized that the
+narrative details of the Gospels are, to a strong degree, constructed
+from Hebrew Bible templates.  The passion narrative of Mark maps,
+verse by verse, onto Psalm~22 (\enquote{My God, my God, why have
+you forsaken me?}), Isaiah~53 (\enquote{he was numbered with the
+transgressors}), the Wisdom of Solomon 2--5, and Zechariah.  The
+ministry reprises the Elijah-Elisha miracle cycle.  The birth
+narratives are transparently built from proof-texts, and Matthew's
+and Luke's birth narratives contradict each other so sharply that
+they cannot both be historical.
 
-Thomas's paper grants a point here that some mythicist writing has
-missed.  \enquote{Demonstrating that a narrative is constructed from
-scriptural templates,} he writes, \enquote{does not on its own prove
-that no subject underlies it.}  Historical figures have been
-described through scriptural grammars in antiquity---the biographies
-of the Maccabean heroes are a case in point.  What the Gospel
-material shows is not the non-existence of a historical Jesus, but
-rather that the Gospels cannot be used as independent testimony for
-his existence.  The question of historicity then has to be decided
-on other evidence.
+I want to concede something here that some mythicist writing has
+missed.  Demonstrating that a narrative is constructed from
+scriptural templates does not on its own prove that no subject
+underlies it.  Historical figures have been described through
+scriptural grammars in antiquity---the biographies of the Maccabean
+heroes are a case in point.  What the Gospel material shows is not
+the non-existence of a historical Jesus, but that the Gospels
+cannot be used as independent testimony for his existence.  The
+question of historicity then has to be decided on other evidence.
 
 That other evidence turns out to be thin.  Josephus, writing in the
 90s~\textsc{ce}, has two passages mentioning Jesus.  The longer
@@ -282,56 +278,55 @@ much of it is original is contested.  The shorter James passage is
 accepted as largely genuine, but the phrase Josephus uses---
 \enquote{brother of Jesus called Christ}---may itself be a later
 insertion, and in any case carries limited evidential weight almost
-a century after the supposed events, from an author writing in Rome
-for a Roman audience who probably learned what he knew from the
-Christian communities he encountered.
+a century after the supposed events, from an author writing in
+Rome for a Roman audience who probably learned what he knew from
+the Christian communities he encountered.
 
-Tacitus, writing around 116~\textsc{ce}, mentions Christ's execution
-by Pilate, but almost certainly draws his information from Christian
-informants rather than from Roman imperial records.  The rabbinic
-traditions about Yeshu, including the later \textit{Toledot Yeshu}
-compilations, are polemical engagements with the Christian narrative,
-not independent attestations of an earlier figure.
+Tacitus, writing around 116~\textsc{ce}, mentions Christ's
+execution by Pilate, but almost certainly draws his information
+from Christian informants rather than from Roman imperial records.
+The rabbinic traditions about Yeshu, including the later
+\textit{Toledot Yeshu} compilations, are polemical engagements with
+the Christian narrative, not independent attestations of an
+earlier figure.
 
 What would settle the question is the kind of evidence that settled
-the historicity of Pilate himself: a first-century inscription, or a
-contemporary document, or an artefact contemporary with Jesus's life
-that names him.  No such object has ever been found.  The 2002
-\enquote{James Ossuary,} which briefly looked like it might be such
-an artefact, was found by an Israeli antiquities investigation to
-bear a modern forgery.
+the historicity of Pilate himself: a first-century inscription, a
+contemporary document, an artefact naming him.  No such object has
+ever been found.  The 2002 \enquote{James Ossuary}---which briefly
+looked like it might be such an artefact---was found by an Israeli
+antiquities investigation to bear a modern forgery.
 
 \sectbreak
 \section*{The honest concessions}
 
-What makes Thomas's paper unusual in the mythicist genre is its
-willingness to acknowledge the places where the mythic-origin
-hypothesis is difficult to defend.
+I have tried, in writing the paper, to be explicit about the places
+where my own argument is difficult to defend.  Three Pauline
+passages in particular are, in my assessment, \enquote{genuine
+challenges.}
 
-Three Pauline passages in particular are, in his assessment,
-\enquote{genuine challenges.}  Romans~1:3 describes Christ as
-\enquote{descended from David according to the flesh}---a
-specifically genealogical, specifically historical, specifically
-Jewish-messianic claim.  Galatians~4:4 says Christ was \enquote{born
-of a woman, born under the law.}  And the witness list in
-1~Corinthians~15 names specific people---Cephas, James, the Twelve,
-five hundred brothers at once, Paul himself---to whom the risen
-Christ is said to have appeared.
+Romans~1:3 describes Christ as \enquote{descended from David
+according to the flesh}---a specifically genealogical, specifically
+historical, specifically Jewish-messianic claim.  Galatians~4:4
+says Christ was \enquote{born of a woman, born under the law.}  And
+the witness list in 1~Corinthians~15 names specific
+people---Cephas, James, the Twelve, five hundred brothers at once,
+Paul himself---to whom the risen Christ is said to have appeared.
 
-These are not easy passages for a purely mythic reading.  Thomas's
-paper engages them, offers possible readings (they are pre-Pauline
-creedal formulas; \enquote{according to the flesh} can mark a descent
-into the sublunar realm of flesh rather than a biographical lineage;
-the witness list reads less like a biographical record than like a
-list of visionary recipients), but does not claim to have fully
-resolved them.  The concluding chapter is explicit: \enquote{Several
-features of the evidence pose genuine difficulties for the mythicist
-model that have not been fully resolved.}
+These are not easy passages for a purely mythic reading.  I engage
+each of them and offer possible readings (they are pre-Pauline
+creedal formulas; \enquote{according to the flesh} can mark a
+descent into the sublunar realm of flesh rather than a biographical
+lineage; the witness list reads less like a biographical record
+than like a list of visionary recipients), but I do not claim to
+have fully resolved them.  The concluding chapter is explicit:
+several features of the evidence pose genuine difficulties for the
+mythic-origin model that have not been fully resolved.
 
-The paper also offers a constructive hypothesis, not just a
-destructive critique.  Drawing on the 1941 work of Gershom Scholem
-on Jewish mysticism and the more recent work of Alan Segal on Paul
-as a visionary-mystic, it argues that the earliest Christian
+What I have tried to offer, alongside the critique, is a
+constructive hypothesis.  Drawing on the 1941 work of Gershom
+Scholem on Jewish mysticism and the more recent work of Alan Segal
+on Paul as a visionary-mystic, I argue that the earliest Christian
 community looks exactly like a Second Temple Jewish apocalyptic-
 mystical sect that generated its knowledge of a heavenly mediator
 figure through the well-attested procedures of visionary ascent and
@@ -340,36 +335,34 @@ scriptural exegesis---the same procedures that produced the
 the \textit{Ascension of Isaiah}, and the Dead Sea Scrolls'
 Self-Glorification Hymn.  The Christ Paul knew, on this reading, is
 a named heavenly figure known to the community by revelation.  The
-historicization---the setting of that figure in recent Galilean time
-and place---would come later, with the Gospel of Mark around
+historicization---the setting of that figure in recent Galilean
+time and place---comes later, with the Gospel of Mark around
 70~\textsc{ce}.
 
-This is much closer to the scholarly mainstream than most mythicist
-writing gets.  It does not invoke pagan dying-and-rising mystery
-cults.  It does not claim Paul was a Gnostic.  It does not deny
-that Christianity is rooted in Jewish thought.  It simply argues
-that the specific Jewish thought-world it is rooted in---visionary-
-ascent apocalypticism---does not require a historical founder to
-explain what the early letters say.
+This is much closer to the scholarly mainstream than most
+mythicist writing gets.  It does not invoke pagan dying-and-rising
+mystery cults.  It does not claim Paul was a Gnostic.  It does not
+deny that Christianity is rooted in Jewish thought.  It simply
+argues that the specific Jewish thought-world it is rooted
+in---visionary-ascent apocalypticism---does not require a
+historical founder to explain what the early letters say.
 
 \sectbreak
 \section*{What the field has not been asking}
 
-Thomas is not the first person to make parts of this argument.
-What is unusual is how his paper handles its own weaknesses.  It
-concedes explicitly.  It lists by name the scholars whose work most
-threatens its conclusions---Dale Allison of Princeton Theological
-Seminary, Paula Fredriksen of Boston University, Matthew Novenson
-of Edinburgh, Philip Harland of York University---and walks through
-what each of them would likely say in response.  It includes, as
-companion documents, a comprehensive bibliography, a list of
-explicit falsification conditions, and a document titled
-\textit{Responses} that anticipates the reviewer objections it will
-draw.
+I am not the first person to make parts of this argument.  What I
+have tried to do differently is handle the argument's own weaknesses
+honestly.  I list by name the scholars whose work most threatens my
+conclusions---Dale Allison of Princeton Theological Seminary, Paula
+Fredriksen of Boston University, Matthew Novenson of Edinburgh,
+Philip Harland of York University---and I walk through what each of
+them would likely say in response.  A companion document in the
+repository anticipates the reviewer objections the paper is most
+likely to draw.
 
-\enquote{The question is not whether scholars agree,} the paper's
-methodological preface says, \enquote{but whether the evidence
-warrants their agreement.}
+The question, as I put it in the paper's methodological preface, is
+not whether scholars agree.  The question is whether the evidence
+warrants their agreement.
 
 That framing may be the most provocative thing in the document.
 The scholarly study of the historical Jesus emerged, historically,
@@ -381,50 +374,47 @@ Jesus was a shared premise of the enterprise.  The field has been
 intensely rigorous about almost every other aspect of the
 tradition: about which sayings are authentic, about the Synoptic
 problem, about textual transmission, about the development of
-doctrine.  What it has not, as a field, been in the habit of
-asking is whether its shared starting premise holds.
+doctrine.  What it has not, as a field, been in the habit of asking
+is whether its shared starting premise holds.
 
-Whether the premise does hold is not a question that a single paper
-by an independent researcher from Utah can settle.  But the paper
-is not asking to settle it.  It is asking for the premise to be
-examined with the same tools the field uses to examine everything
-else.
+I do not expect a single paper to settle that question.  I am not
+asking for it to be settled.  I am asking for it to be examined
+with the same tools the field uses to examine everything else.
 
 \sectbreak
 \section*{The stakes}
 
-None of this undermines the cultural, theological, or ethical
-significance of the Christian tradition.  A figure assembled from
-Jewish scripture and Hellenistic religious imagination is not less
-philosophically consequential than a figure assembled from oral
-memory and community tradition.  The Sermon on the Mount is what
-it is regardless of whether it was spoken on a hillside or composed
-in a community in Antioch.
+None of what I argue undermines the cultural, theological, or
+ethical significance of the Christian tradition.  A figure assembled
+from Jewish scripture and Hellenistic religious imagination is not
+less philosophically consequential than a figure assembled from
+oral memory and community tradition.  The Sermon on the Mount is
+what it is regardless of whether it was spoken on a hillside or
+composed in a community in Antioch.
 
-What is at stake is not theology.  It is what the discipline of
-history looks like when it applies its own evidentiary standards
-consistently.
+What is at stake is not theology.  What is at stake is what the
+discipline of history looks like when it applies its own evidentiary
+standards consistently.
 
-There is, on the last page of Thomas's paper, a line that reads
-less like an argument and more like a challenge: \enquote{If the
-field cannot bring itself to treat the question as open---if the
-mere posing of the question continues to be treated as a mark of
-incompetence rather than as a legitimate scholarly inquiry---then
-the field has a problem that no amount of consensus can resolve.}
+Near the end of the paper I wrote a line that reads less like an
+argument than like a challenge: if the field cannot bring itself to
+treat the question as open---if the mere posing of the question
+continues to be treated as a mark of incompetence rather than as a
+legitimate scholarly inquiry---then the field has a problem that
+no amount of consensus can resolve.
 
 Ehrman, for what it is worth, is unlikely to change his mind.  Dale
 Allison is more likely to engage.  Paula Fredriksen will probably
-not be persuaded but may push the argument in productive
-directions.  Philip Harland, the specialist on \textit{adelphoi} in
-Greek religious associations, is the scholar whose work is most
-directly cited, and whose reaction will be most informative, if he
-chooses to respond.
+not be persuaded but may push my argument in productive directions.
+Philip Harland, the specialist on \textit{adelphoi} in Greek
+religious associations, is the scholar whose work is most directly
+cited in my paper, and whose reaction will be most informative, if
+he chooses to respond.
 
 Whether any of them does is the real test.  For two thousand years,
 the question of whether Jesus of Nazareth existed has been answered
 with a confidence that the evidence itself does not quite support.
-A researcher in St.\ George, Utah, has written an 85-page paper
-asking the field to notice.
+I have written an 85-page paper asking the field to notice.
 
 \vspace{2em}
 \begin{center}
@@ -433,7 +423,7 @@ asking the field to notice.
 \vspace{1em}
 
 {\small\noindent\itshape
-Stan Thomas's paper and supplementary materials are available at
+The paper and supplementary materials are available at
 \url{https://github.com/sbthomas/historicity} under a Creative
 Commons Attribution-NonCommercial licence.  The full-length paper
 runs to 86~pages; a journal-length compressed version and two
