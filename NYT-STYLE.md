@@ -1,6 +1,6 @@
 # Two Thousand Years Later, a New Question About the Most Famous Man in History
 
-*The consensus says he existed. I have spent a year arguing the evidence is thinner than that consensus lets on.*
+*The consensus says he existed. This paper argues the evidence is thinner than that consensus lets on.*
 
 **By Stan Thomas** — St. George, Utah, April 2026
 
@@ -19,13 +19,11 @@ individual.](figures/jesus-forensic-reconstruction.png)
 
 ---
 
-I should say first what I am not. I am not a theologian. I do not
-teach at a divinity school. I do not have a book deal. I live in St.
-George, Utah, and in my spare time over the past year I have written
-an 85-page paper arguing that the case for the historical Jesus — the
-Galilean preacher crucified under Pontius Pilate around the year 30 —
-is considerably weaker than most people, including most scholars,
-assume.
+I am an independent researcher in St. George, Utah. I have written
+an 85-page paper arguing that the case for the historical Jesus —
+the Galilean preacher crucified under Pontius Pilate around the year
+30 — is considerably weaker than most people, including most
+scholars, assume.
 
 This is the kind of project that makes serious historians groan
 before they finish the abstract, and I want to be honest about why
@@ -290,15 +288,16 @@ continues to be treated as a mark of incompetence rather than as a
 legitimate scholarly inquiry — then the field has a problem that
 no amount of consensus can resolve.
 
-Ehrman, for what it is worth, is unlikely to change his mind. Dale
-Allison is more likely to engage. Paula Fredriksen will probably
-not be persuaded but may push my argument in productive
-directions. Philip Harland, the specialist on *adelphoi* in Greek
-religious associations, is the scholar whose work is most directly
-cited in my paper, and whose reaction will be most informative, if
-he chooses to respond.
-
-Whether any of them does is the real test. For two thousand years,
+Whether any of the scholars I engage responds is the real test.
+Philip Harland's 2005 work on *adelphoi* in Greek religious
+associations is the single most directly-cited body of evidence in
+the paper. Dale Allison's methodological skepticism about the
+criteria of authenticity aligns with part of my critique. Paula
+Fredriksen's insistence on Paul's Jewish context is the argument
+the paper takes most seriously in its own §7 reframing. Matthew
+Novenson's work on Davidic messianism frames the hardest concession
+I make, at Romans 1:3. I have tried to make the paper worth each of
+their attention. For two thousand years,
 the question of whether Jesus of Nazareth existed has been
 answered with a confidence that the evidence itself does not quite
 support. I have written an 85-page paper asking the field to
