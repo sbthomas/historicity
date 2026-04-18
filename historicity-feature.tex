@@ -11,6 +11,7 @@
 \usepackage{titlesec}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{multicol}
 \IfFileExists{lettrine.sty}%
   {\usepackage{lettrine}}%
   {\providecommand{\lettrine}[3][]{\textbf{\Large ##2}##3}}
@@ -36,11 +37,11 @@
 
 %% –– Section heads ––
 \titleformat{\section}
-  {\normalsize\itshape\filcenter}
+  {\small\itshape\filcenter}
   {}
   {0pt}
   {}
-\titlespacing*{\section}{0pt}{1.5em}{0.8em}
+\titlespacing*{\section}{0pt}{1.2em}{0.6em}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -49,7 +50,12 @@
 
 \setlength{\parindent}{1.2em}
 \setlength{\parskip}{0pt}
-\onehalfspacing
+\setstretch{1.12}
+
+%% –– Multi-column body settings ––
+\setlength{\columnsep}{22pt}
+\setlength{\columnseprule}{0.25pt}
+\renewcommand{\columnseprulecolor}{\color{rule}}
 
 \newcommand{\sectbreak}{%
   \par\vspace{1.3em}
@@ -127,8 +133,10 @@
 \pagestyle{fancy}
 
 %% ============================================================
-%%  BODY — first person
+%%  BODY — first person, two-column magazine layout
 %% ============================================================
+
+\begin{multicols}{2}
 
 \lettrine[lines=3,findent=2pt,nindent=0pt,loversize=0.15]{I}{} should
 say first what I am not.
@@ -424,11 +432,13 @@ the question of whether Jesus of Nazareth existed has been answered
 with a confidence that the evidence itself does not quite support.
 I have written an 85-page paper asking the field to notice.
 
-\vspace{2em}
+\end{multicols}
+
+\vspace{1em}
 \begin{center}
 {\color{rule}\rule{0.4\textwidth}{0.4pt}}
 \end{center}
-\vspace{1em}
+\vspace{0.8em}
 
 {\small\noindent\itshape
 The paper and supplementary materials are available at
