@@ -158,6 +158,7 @@ and supplements for detailed evidence.
 | `FALSIFICATION.md` | Explicit falsification conditions in both directions |
 | `PRESENTATION.md` | Slide-format summary (Pandoc-convertible) |
 | `NYT-STYLE.md` | General-audience long-form summary in newspaper-feature style (~2,500 words) |
+| `historicity-feature.tex` / `.pdf` | Typeset (XeLaTeX + Palatino) edition of the general-audience article |
 | `LICENSE` | CC BY-NC 4.0 |
 
 ---
