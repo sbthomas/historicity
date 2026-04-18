@@ -9,6 +9,9 @@
 \usepackage{fancyhdr}
 \usepackage{setspace}
 \usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup{font={small,it},labelformat=empty,justification=raggedright,singlelinecheck=false}
 \IfFileExists{lettrine.sty}%
   {\usepackage{lettrine}}%
   {\providecommand{\lettrine}[3][]{\textbf{\Large ##2}##3}}
@@ -93,7 +96,26 @@
   {\color{rule}\rule{0.4\textwidth}{0.4pt}}
 \end{center}
 
-\vspace{1.2em}
+\vspace{1.4em}
+
+%% –– Lead image ––
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=0.72\textwidth]{figures/jesus-forensic-reconstruction.png}
+  \caption{%
+    An AI-generated reconstruction of what a first-century Galilean man
+    in his early thirties might plausibly have looked like, informed by
+    ancient DNA studies of Roman-period Judean skeletal remains, forensic
+    anthropology of the region, and the cultural and occupational context
+    of the Jewish artisan class.  The image follows the logic of Richard
+    Neave's 2001 forensic reconstruction---that Jesus, if historical,
+    would not have resembled the pale, long-haired figure of European
+    artistic tradition---but is a \textit{type study} of a first-century
+    Galilean man, not a portrait of a specific historical individual.%
+  }
+\end{figure}
+
+\vspace{0.4em}
 
 \pagestyle{fancy}
 

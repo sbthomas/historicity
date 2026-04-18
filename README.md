@@ -159,6 +159,7 @@ and supplements for detailed evidence.
 | `PRESENTATION.md` | Slide-format summary (Pandoc-convertible) |
 | `NYT-STYLE.md` | General-audience long-form summary in newspaper-feature style (~2,500 words) |
 | `historicity-feature.tex` / `.pdf` | Typeset (XeLaTeX + Palatino) edition of the general-audience article |
+| `figures/jesus-forensic-reconstruction.png` | AI-generated reconstruction of a 1st-c. Galilean man, informed by ancient DNA / forensic anthropology / cultural context (Neave 2001 lineage); included in the feature article as a type study |
 | `LICENSE` | CC BY-NC 4.0 |
 
 ---
