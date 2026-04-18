@@ -1,6 +1,6 @@
 # Two Thousand Years Later, a New Question About the Most Famous Man in History
 
-*The consensus says he existed. This paper argues the evidence is thinner than that consensus lets on.*
+*The consensus says he existed. An evidence-first examination finds that confidence is not warranted.*
 
 **By Stan Thomas** — St. George, Utah, April 2026
 
@@ -20,31 +20,36 @@ individual.](figures/jesus-forensic-reconstruction.png)
 ---
 
 I am an independent researcher in St. George, Utah. I have written
-an 85-page paper arguing that the case for the historical Jesus —
-the Galilean preacher crucified under Pontius Pilate around the year
-30 — is considerably weaker than most people, including most
-scholars, assume.
+an 86-page paper that examines the evidence for the historical Jesus
+— the Galilean preacher crucified under Pontius Pilate around the
+year 30 — on its own terms, source by source. The finding that
+emerged from that examination is that the evidentiary basis for a
+specific historical individual is considerably weaker than most
+people, including most scholars, assume.
 
 This is the kind of project that makes serious historians groan
-before they finish the abstract, and I want to be honest about why
-that reflex is usually correct. The field has seen this movie before.
-In the late nineteenth century, a German scholar named Bruno Bauer
-argued that Jesus was a literary invention; the Dutch Radical school
-made similar claims a generation later; and more recently, figures
-like Richard Carrier and Raphael Lataster have made the case in forms
-that most biblical scholars consider an embarrassment to engage with.
-Bart Ehrman, the University of North Carolina scholar who is the most
-prominent secular voice defending the historicity of Jesus, once
-observed that "virtually every competent scholar of antiquity,
-Christian or non-Christian, agrees" that Jesus existed.
+before they finish the abstract, and it is worth being honest about
+why that reflex is usually correct. The field has seen this movie
+before. In the late nineteenth century, a German scholar named Bruno
+Bauer argued that Jesus was a literary invention; the Dutch Radical
+school made similar claims a generation later; and more recently,
+figures like Richard Carrier and Raphael Lataster have made the case
+in forms that most biblical scholars consider an embarrassment to
+engage with. Bart Ehrman, the University of North Carolina scholar
+who is the most prominent secular voice defending the historicity of
+Jesus, has observed that "virtually every competent scholar of
+antiquity, Christian or non-Christian, agrees" that Jesus existed.
 
-So why am I adding another paper to what looks like a settled
-question? The short answer is that I do not actually try to prove
-Jesus did not exist. I try to prove something narrower, and in some
-ways more disturbing: that the confidence with which most experts
-assert his existence is not justified by the evidence they have.
-That claim, if taken seriously, changes what biblical scholarship is
-doing.
+I did not set out to prove the mythicists right. The paper does not
+attempt to prove that Jesus did not exist. What it does, over eleven
+sections, is apply the same evidential standards to the historicity
+question that historians routinely apply to every other question
+about the ancient world — and report what those standards yield. The
+result is narrower than an outright mythicist claim and, in some
+ways, more unsettling: the confidence with which most experts assert
+the historical existence of a specific Galilean preacher is not
+justified by the evidence they have. If taken seriously, that
+conclusion changes what biblical scholarship is doing.
 
 ---
 
@@ -82,33 +87,35 @@ weight in modern scholarship. Ehrman has called it, essentially by
 itself, decisive evidence for the historicity of Jesus: if Jesus had
 a biological brother whom Paul met, Jesus existed.
 
-I agree the phrase is real. What I argue in my paper is that
-"brother" in Paul's Greek overwhelmingly does not mean biological
-sibling. Of the 121 times Paul uses the word *adelphos* and its
-variants, 117 refer to fellow members of the early Christian
-community — the "brothers in Christ" usage any reader of Paul's
-letters will recognize. Zero of the remaining occurrences
-unambiguously denote a biological brother of anyone. Which raises a
-question: if "brother" in Paul's corpus is overwhelmingly a
-community term, why is the single phrase "brother of the Lord" being
-translated as a kinship claim rather than as a community title?
+The phrase is textually secure. What the paper shows — by
+enumerating and classifying every *adelph-* occurrence in the seven
+undisputed letters — is that "brother" in Paul's Greek overwhelmingly
+does not mean biological sibling. Of the 121 times Paul uses the
+word *adelphos* and its variants, 117 refer to fellow members of the
+early Christian community — the "brothers in Christ" usage any
+reader of Paul's letters will recognize. Zero of the remaining
+occurrences unambiguously denote a biological brother of anyone.
+Which raises a question: if "brother" in Paul's corpus is
+overwhelmingly a community term, why is the single phrase "brother
+of the Lord" being translated as a kinship claim rather than as a
+community title?
 
 ### A number nobody had calculated
 
-This is where my paper does something that, to my knowledge, no one
-had done before. I compiled a statistical sample of how the word
-*adelphos* is actually used in Greek-language texts from the two
-centuries surrounding Paul's lifetime — ancient letters scrawled on
-papyrus, the Greek translation of the Hebrew Bible, the writings of
-Philo of Alexandria, the works of Josephus, Plutarch, Epictetus,
-Polybius, Strabo, Diodorus. I drew 405 random tokens, classified
-each one, and computed the base rate for a "community of fellow
-members" usage.
+This is where the paper does something that, to my knowledge, had
+not been done before. The supplementary study compiles a statistical
+sample of how the word *adelphos* is actually used in Greek-language
+texts from the two centuries surrounding Paul's lifetime — ancient
+letters scrawled on papyrus, the Greek translation of the Hebrew
+Bible, the writings of Philo of Alexandria, the works of Josephus,
+Plutarch, Epictetus, Polybius, Strabo, Diodorus. 405 random tokens
+were drawn, each classified, and the base rate for a "community of
+fellow members" usage computed.
 
 The rate is 0.7 percent. Paul's rate is 96.7 percent.
 
-This extreme difference is not, as such, a proof of anything. I am
-careful in the paper to note that my sample excludes a relevant
+This extreme difference is not, as such, a proof of anything. The
+paper is careful to note that the sample excludes a relevant
 register: Greek inscriptions from religious associations across the
 eastern Mediterranean, where the word *adelphoi* was the normal
 term for fellow members of cult societies. A scholar named Philip
@@ -123,8 +130,8 @@ Factoring the inscriptional evidence in, the gap between Paul and
 the ambient baseline shrinks. But the interpretive consequence runs
 the opposite direction from what a defender of Jesus's historicity
 would like. Far from isolating Paul as an idiosyncratic stylist,
-the inscriptions show that Paul was writing in a well-attested
-Greek register in which *adelphoi* of a patron figure was a normal
+the inscriptions show that Paul was writing in a well-attested Greek
+register in which *adelphoi* of a patron figure was a normal
 community designation. The more natural reading of "brother of the
 Lord," when placed in its actual Greek religious-associative
 context, is that it names James as a member of a group within the
@@ -136,23 +143,23 @@ Galilean.
 The Gospels — Mark, Matthew, Luke, John — present a different
 problem. They were written between 40 and 70 years after the
 supposed events, by authors whose identities we do not know, in
-Greek, for audiences that were not in Palestine. None of them
-claims to be an eyewitness account.
+Greek, for audiences that were not in Palestine. None of them claims
+to be an eyewitness account.
 
-Biblical scholarship has for more than a century recognized that
-the narrative details of the Gospels are, to a strong degree,
+Biblical scholarship has for more than a century recognized that the
+narrative details of the Gospels are, to a strong degree,
 constructed from Hebrew Bible templates. The passion narrative of
-Mark maps, verse by verse, onto Psalm 22 ("My God, my God, why
-have you forsaken me?"), Isaiah 53 ("he was numbered with the
+Mark maps, verse by verse, onto Psalm 22 ("My God, my God, why have
+you forsaken me?"), Isaiah 53 ("he was numbered with the
 transgressors"), the Wisdom of Solomon 2–5, and Zechariah. The
 ministry reprises the Elijah-Elisha miracle cycle. The birth
 narratives are transparently built from proof-texts, and Matthew's
 and Luke's birth narratives contradict each other so sharply that
 they cannot both be historical.
 
-I want to concede something here that some mythicist writing has
-missed. Demonstrating that a narrative is constructed from
-scriptural templates does not on its own prove that no subject
+It is important to be precise about the logical step this
+observation supports. Demonstrating that a narrative is constructed
+from scriptural templates does not on its own prove that no subject
 underlies it. Historical figures have been described through
 scriptural grammars in antiquity — the biographies of the Maccabean
 heroes are a case in point. What the Gospel material shows is not
@@ -179,19 +186,19 @@ traditions about Yeshu, including the later *Toledot Yeshu*
 compilations, are polemical engagements with the Christian
 narrative, not independent attestations of an earlier figure.
 
-What would settle the question is the kind of evidence that
-settled the historicity of Pilate himself: a first-century
-inscription, a contemporary document, an artifact naming him. No
-such object has ever been found. The 2002 James Ossuary — which
-briefly looked like it might be such an artifact — was found by an
-Israeli antiquities investigation to bear a modern forgery.
+What would settle the question is the kind of evidence that settled
+the historicity of Pilate himself: a first-century inscription, a
+contemporary document, an artifact naming him. No such object has
+ever been found. The 2002 James Ossuary — which briefly looked like
+it might be such an artifact — was found by an Israeli antiquities
+investigation to bear a modern forgery.
 
 ### The honest concessions
 
-I have tried, in writing the paper, to be explicit about the
-places where my own argument is difficult to defend. Three
-Pauline passages in particular are, in my assessment, genuine
-challenges.
+I have tried, in writing the paper, to be explicit about where the
+evidence is weakest for the conclusion the analysis reaches. Three
+Pauline passages are, in my assessment, genuine challenges for a
+non-historicist reading.
 
 Romans 1:3 describes Christ as "descended from David according to
 the flesh" — a specifically genealogical, specifically historical,
@@ -201,54 +208,56 @@ Corinthians 15 names specific people — Cephas, James, the Twelve,
 five hundred brothers at once, Paul himself — to whom the risen
 Christ is said to have appeared.
 
-These are not easy passages for a purely mythic reading. I engage
-each of them and offer possible readings (they are pre-Pauline
-creedal formulas; "according to the flesh" can mark a descent into
-the sublunar realm of flesh rather than a biographical lineage;
-the witness list reads less like a biographical record than like a
-list of visionary recipients), but I do not claim to have fully
-resolved them. The concluding chapter is explicit: several
-features of the evidence pose genuine difficulties for the
-mythic-origin model that have not been fully resolved.
+These are not easy passages for a reading that does not assume a
+historical founder. The paper engages each and offers possible
+readings (they are pre-Pauline creedal formulas; "according to the
+flesh" can mark a descent into the sublunar realm of flesh rather
+than a biographical lineage; the witness list reads less like a
+biographical record than like a list of visionary recipients), but
+it does not claim to have fully resolved them. The concluding
+chapter is explicit: several features of the evidence pose genuine
+difficulties for the mythic-origin model that have not been fully
+resolved.
 
-What I have tried to offer, alongside the critique, is a
-constructive hypothesis. Drawing on the 1941 work of Gershom
-Scholem on Jewish mysticism and the more recent work of Alan Segal
-on Paul as a visionary-mystic, I argue that the earliest Christian
-community looks exactly like a Second Temple Jewish
-apocalyptic-mystical sect that generated its knowledge of a
-heavenly mediator figure through the well-attested procedures of
-visionary ascent and scriptural exegesis — the same procedures
-that produced the *Similitudes of Enoch*, the *Apocalypse of
-Abraham*, the *Ascension of Isaiah*, and the Dead Sea Scrolls'
-Self-Glorification Hymn. The Christ Paul knew, on this reading, is
-a named heavenly figure known to the community by revelation. The
-historicization — the setting of that figure in recent Galilean
-time and place — comes later, with the Gospel of Mark around 70 CE.
+Alongside the evidential analysis, the paper offers a constructive
+hypothesis. Drawing on the 1941 work of Gershom Scholem on Jewish
+mysticism and the more recent work of Alan Segal on Paul as a
+visionary-mystic, it argues that the earliest Christian community
+looks exactly like a Second Temple Jewish apocalyptic-mystical sect
+that generated its knowledge of a heavenly mediator figure through
+the well-attested procedures of visionary ascent and scriptural
+exegesis — the same procedures that produced the *Similitudes of
+Enoch*, the *Apocalypse of Abraham*, the *Ascension of Isaiah*, and
+the Dead Sea Scrolls' Self-Glorification Hymn. The Christ Paul knew,
+on this reading, is a named heavenly figure known to the community
+by revelation. The historicization — the setting of that figure in
+recent Galilean time and place — comes later, with the Gospel of
+Mark around 70 CE.
 
-This is much closer to the scholarly mainstream than most
-mythicist writing gets. It does not invoke pagan dying-and-rising
+This is closer to the scholarly mainstream than most earlier
+mythicist writing. It does not invoke pagan dying-and-rising
 mystery cults. It does not claim Paul was a Gnostic. It does not
-deny that Christianity is rooted in Jewish thought. It simply
-argues that the specific Jewish thought-world it is rooted in —
+deny that Christianity is rooted in Jewish thought. It argues that
+the specific Jewish thought-world it is rooted in —
 visionary-ascent apocalypticism — does not require a historical
 founder to explain what the early letters say.
 
 ### What the field has not been asking
 
-I am not the first person to make parts of this argument. What I
-have tried to do differently is handle the argument's own
-weaknesses honestly. I list by name the scholars whose work most
-threatens my conclusions — Dale Allison of Princeton Theological
-Seminary, Paula Fredriksen of Boston University, Matthew Novenson
-of Edinburgh, Philip Harland of York University — and I walk
-through what each of them would likely say in response. A
-companion document in the repository anticipates the reviewer
-objections the paper is most likely to draw.
+I am not the first person to raise parts of this line of inquiry.
+What the paper tries to do differently is handle the weaknesses of
+its own conclusion honestly. It engages by name the scholars whose
+published work is most directly relevant — Dale Allison of
+Princeton Theological Seminary, Paula Fredriksen of Boston
+University, Matthew Novenson of Edinburgh, Philip Harland of York
+University — and walks through the arguments in their own work
+that the analysis must reckon with. A companion document in the
+repository compiles the reviewer objections the paper is most
+likely to draw, with cross-references to where each is addressed.
 
-The question, as I put it in the paper's methodological preface,
-is not whether scholars agree. The question is whether the
-evidence warrants their agreement.
+The question, as the paper's methodological preface puts it, is not
+whether scholars agree. The question is whether the evidence
+warrants their agreement.
 
 That framing may be the most provocative thing in the document.
 The scholarly study of the historical Jesus emerged, historically,
@@ -269,39 +278,41 @@ with the same tools the field uses to examine everything else.
 
 ### The stakes
 
-None of what I argue undermines the cultural, theological, or
-ethical significance of the Christian tradition. A figure
+None of what the paper finds undermines the cultural, theological,
+or ethical significance of the Christian tradition. A figure
 assembled from Jewish scripture and Hellenistic religious
-imagination is not less philosophically consequential than a
-figure assembled from oral memory and community tradition. The
-Sermon on the Mount is what it is regardless of whether it was
-spoken on a hillside or composed in a community in Antioch.
+imagination is not less philosophically consequential than a figure
+assembled from oral memory and community tradition. The Sermon on
+the Mount is what it is regardless of whether it was spoken on a
+hillside or composed in a community in Antioch.
 
 What is at stake is not theology. What is at stake is what the
 discipline of history looks like when it applies its own
 evidentiary standards consistently.
 
-Near the end of the paper I wrote a line that reads less like an
-argument than like a challenge: if the field cannot bring itself
-to treat the question as open — if the mere posing of the question
+Near the end of the paper there is a line that reads less like a
+finding than like a challenge: if the field cannot bring itself to
+treat the question as open — if the mere posing of the question
 continues to be treated as a mark of incompetence rather than as a
 legitimate scholarly inquiry — then the field has a problem that
 no amount of consensus can resolve.
 
-Whether any of the scholars I engage responds is the real test.
-Philip Harland's 2005 work on *adelphoi* in Greek religious
-associations is the single most directly-cited body of evidence in
-the paper. Dale Allison's methodological skepticism about the
-criteria of authenticity aligns with part of my critique. Paula
-Fredriksen's insistence on Paul's Jewish context is the argument
-the paper takes most seriously in its own §7 reframing. Matthew
-Novenson's work on Davidic messianism frames the hardest concession
-I make, at Romans 1:3. I have tried to make the paper worth each of
-their attention. For two thousand years,
-the question of whether Jesus of Nazareth existed has been
-answered with a confidence that the evidence itself does not quite
-support. I have written an 85-page paper asking the field to
-notice.
+Whether any of the scholars engaged in the paper responds to it is
+the real test. Philip Harland's 2005 work on *adelphoi* in Greek
+religious associations is the single most directly-cited body of
+evidence in the paper. Dale Allison's methodological skepticism
+about the criteria of authenticity aligns with part of the paper's
+own critique of those criteria. Paula Fredriksen's insistence on
+Paul's Jewish context is the argument the paper takes most
+seriously in its §8 reframing of the mythic-origin scenario around
+a Jewish-apocalyptic matrix. Matthew Novenson's work on Davidic
+messianism frames the hardest concession the paper makes, at
+Romans 1:3.
+
+For two thousand years, the question of whether Jesus of Nazareth
+existed has been answered with a confidence that the evidence
+itself does not quite support. What the paper does is examine the
+question honestly and follow where the evidence leads.
 
 ---
 
