@@ -195,26 +195,46 @@ fundamentally change what it is and how it should be studied.
 
 The structure of the paper is as follows.  Section~\ref{sec:method}
 establishes the methodological framework: the distinction between
-evidence and authority, the Bayesian structure of historical inference,
-and the formal conditions under which absence of evidence constitutes
-evidence of absence.  Section~\ref{sec:paul} examines the Pauline
-corpus, the earliest stratum of Christian writing, and argues that
-Paul's Jesus is a revelatory and celestial figure, not a
-recently-living historical person.  Section~\ref{sec:gospels} analyzes
-the Gospel sources as literary and theological compositions built from
-identifiable scriptural and mythological templates.
-Section~\ref{sec:noncanon} extends this analysis to non-canonical
-Christian texts.  Section~\ref{sec:external} evaluates the non-Christian
-attestation---Josephus, Tacitus, and minor references---and finds each
-wanting.  Section~\ref{sec:silence} develops the argument from silence
-across multiple independent documentary traditions.
-Section~\ref{sec:myth} catalogs the mythological parallels and prior
-sources from which every element of the Jesus narrative can be derived.
-Section~\ref{sec:trajectory} examines the trajectory of source
-development and argues that it runs from mythic to historical, not the
-reverse.  Section~\ref{sec:sociology} considers the sociological
-structure of the consensus itself.  Section~\ref{sec:conclusion}
-summarizes the findings.
+evidence and authority, the Bayesian structure of historical
+inference, the formal conditions under which absence of evidence
+constitutes evidence of absence, the collapse of the criteria of
+authenticity, and a comparative analysis of how existence-questions
+have been resolved for other contested historical figures
+(Pilate, Socrates, Moses, Lycurgus, Pythagoras, Romulus, Arthur,
+Homer, Laozi).  Section~\ref{sec:paul} examines the Pauline corpus,
+the earliest stratum of Christian writing, with particular attention
+to the dating and textual-critical state of contested passages
+(Gal~1:19, Rom~1:3--4, 1~Cor~15:3--8, Gal~4:4, 1~Thess~2:14--16)
+and to recent Paul-skeptical scholarship.
+Section~\ref{sec:gospels} analyses the Gospel sources as literary
+compositions built from identifiable scriptural templates, with
+explicit attention to the logical step from ``Gospels are not
+independent historical testimony'' to ``a historical figure is
+neither proved nor disproved.''  Section~\ref{sec:noncanon}
+extends the analysis to non-canonical Christian texts.
+Section~\ref{sec:external} evaluates the non-Christian attestation
+channels: the Josephan \textit{Testimonium} and James passages,
+Tacitus, Pliny and Suetonius, the rabbinic and \textit{Toledoth
+Yeshu} traditions, the Mandaean tradition, and the archaeological
+substrate (Nazareth habitation, Sepphoris silence, the Yehohanan
+ossuary, the James ossuary controversy).
+Section~\ref{sec:silence} develops the argument from silence across
+multiple independent documentary channels.  Section~\ref{sec:myth}
+presents the prior-sources argument, locating the Jesus tradition's
+material primarily in the Jewish apocalyptic-mystical matrix
+(Danielic Son of Man, Suffering Servant, angelomorphic mediators,
+Philo's Logos), engaging the revelatory-ascent mechanism through
+which Paul himself claims to have received his Christ-knowledge,
+and treating Hellenistic parallels as secondary ambient context
+rather than as primary source.  Section~\ref{sec:trajectory}
+examines the trajectory of source development and argues that it
+runs from mythic to historical, not the reverse.
+Section~\ref{sec:sociology} considers the sociological structure of
+the consensus and engages with the most rigorous historicist
+interlocutors (Ehrman, Casey, Meier, Allison).
+Section~\ref{sec:origins} offers a constructive mythic-origin
+scenario, with honest acknowledgment of its unresolved weak points.
+Section~\ref{sec:conclusion} summarizes the findings.
 
 
 %% ============================================================
@@ -671,6 +691,11 @@ traditions of enormous textual and communal extent; their
 historicity profiles differ dramatically.  Scale of reception is
 not evidence of the scale of the underlying historical event.
 
+%% ============================================================
+\section{The Pauline Corpus}
+\label{sec:paul}
+%% ============================================================
+
 The letters attributed to Paul constitute the earliest stratum of
 surviving Christian writing.  If a historical Jesus existed and was known
 to Paul's contemporaries, this is where we would expect to find the
@@ -918,6 +943,68 @@ reconstructions and patristic citation, and that some passages
 widely accepted as interpolations cannot be detected from the
 manuscript record alone---which is a methodological caution for
 both sides of the debate.
+
+\paragraph{Preliminary stylometric analysis of the contested
+passages.}
+A first-pass stylometric analysis, reported in the project
+repository (\textit{baseline/stylometry\_report.md}), offers modest
+independent corroboration of the textual picture above.  The
+analysis computes function-word-frequency profiles for each
+Pauline letter and for individual candidate passages, then
+measures the Euclidean distance of each from the global Pauline
+baseline.  The method uses approximately eighty high-frequency
+Koine Greek function words (conjunctions, particles, articles,
+pronouns, prepositions) chosen to discriminate style rather than
+content.
+
+The method validates on its control set.  The two passages most
+confidently identified as interpolations in modern scholarship---
+1~Thessalonians~2:14--16 and 1~Corinthians~14:34--35---both show up
+as strong stylometric outliers (distance~$\approx 0.10$ vs.\ a
+per-letter baseline of~$0.015$--$0.05$).  The pre-Pauline creedal
+fragments are also correctly flagged as distinct: Romans~1:3--4
+(distance~$0.17$), 1~Corinthians~15:3--5 (distance~$0.16$), and
+Philippians~2:5--11 (distance~$0.07$).  The rolling-window scan
+additionally identifies 2~Corinthians~6:14--7:1---a passage
+independently suspected of interpolation by some specialists---as
+the largest outlier in the corpus.
+
+For the historicity-relevant passages, the results are more
+measured.  In wider context (Galatians~1:18--20, the three-verse
+passage containing \grk{ton adelphon tou kyriou}), the
+stylometric distance from Pauline baseline is $\approx 0.09$---
+noticeably above baseline but \textit{less} distinctive than the
+established interpolations and less distinctive than the pre-
+Pauline creeds.  Galatians~4:3--5 is similarly mild
+($\approx 0.11$).  1~Corinthians~9:4--6 is more distinctive
+($\approx 0.18$), suggesting some stylistic movement at that
+passage but not at an interpolation-diagnostic level.
+
+The stylometric signal at Gal~1:19 alone, or 1~Cor~9:5 alone, is
+not reliably distinguishable from sampling noise at the 13--19-
+token scale at which individual verses can be analysed; stylometric
+inference requires substantially larger windows for robust results.
+
+The honest summary is that preliminary stylometric evidence
+\textit{does not support} an interpolation hypothesis for the
+principal historicity-relevant passages: those passages cluster
+stylistically with their surrounding Pauline context more closely
+than the established interpolations do, and meaningfully less
+distinctively than the recognised pre-Pauline creedal formulae.
+The interpretive argument for the community-title reading of
+Gal~1:19 must therefore rely on semantic, contextual, and
+corpus-linguistic grounds rather than on text-critical or
+stylometric excision.
+
+This is the honest negative result.  A proper stylometric study of
+Pauline authenticity would use larger windows, multiple feature
+schemes (function words, character $n$-grams, POS distributions),
+and publication-standard statistical testing.  The preliminary
+analysis here is offered to establish the \textit{direction} of
+stylometric evidence on the contested passages; it is not an
+argument against the community-title reading of Gal~1:19 as such,
+but it is an argument \textit{against} defending that reading by
+appeal to interpolation.
 
 %% ------------------------------------------------------------
 \subsection{The Character of Paul's Jesus}
@@ -2912,7 +2999,7 @@ it is the Jewish matrix.
 CE): Abraham undergoes angelic ascent, receives visions of the
 cosmic order, and learns the identity of heavenly mediators.
 \item \textbf{The Ascension of Isaiah} (first or early second
-century; discussed in Section~\ref{sec:noncanon:isaiah}): Isaiah
+century; discussed in Section~\ref{sec:noncanon:ascension}): Isaiah
 ascends through the seven heavens, sees the pre-existent Beloved,
 and witnesses the Beloved's descent, crucifixion (in the sublunar
 realm, in some readings), and return.  The text is formally a
