@@ -115,9 +115,12 @@ Pauline letters with every occurrence of *adelphos*, *adelphē*,
 
 `historicity-baseline.tex` / `historicity-baseline.pdf` (~10 pages).
 Establishes the baseline rate of community-sense *adelphos* in
-contemporary non-Christian Greek by random sampling 212 tokens across
+contemporary non-Christian Greek by random sampling 405 tokens across
 six corpora (papyri 100 BCE – 70 CE, LXX, Philo, Josephus, pre-Pauline
-literary, Hellenistic literary). Includes an appendix of 25 Greek
+literary, Hellenistic literary). The three literary buckets were
+expanded to n=100 each in the n=100 expansion pass; papyri, LXX, and
+Josephus remain at n=35 pending external re-sampling. Baseline A-rate
+is 0.7% (95% Wilson CI [0.3%, 2.2%]). Includes an appendix of 25 Greek
 inscriptions from voluntary religious associations where *adelphoi*
 explicitly designates fellow members (compiled from Harland's
 Associations in the Greco-Roman World database).
