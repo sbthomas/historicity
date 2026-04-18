@@ -28,13 +28,20 @@ The responsible conclusion is that the evidence does not establish the historici
 
 | File | Description |
 |---|---|
-| `historicity.tex` | LaTeX source (single-file `article` class) |
+| `historicity.tex` | LaTeX source of the main paper |
 | `historicity.bib` | BibTeX bibliography (~60 entries) |
 | `historicity.pdf` | Compiled PDF of the current draft |
+| `historicity-supplement.tex` | Supplementary material (XeLaTeX) |
+| `historicity-supplement.pdf` | Compiled supplement: colour-coded *adelph-* occurrences |
+| `supplement_body.tex` | Generated body of the supplement (full Greek text with markup) |
+| `scripts/build_supplement.py` | Generator that produces `supplement_body.tex` from SBLGNT |
+| `scripts/sblgnt/` | SBL Greek New Testament text of the seven letters (CC BY 4.0) |
 
 ## Building from source
 
-Standard LaTeX toolchain — any recent TeX Live or MacTeX distribution will work.
+### Main paper
+
+Standard pdfLaTeX toolchain — any recent TeX Live or MacTeX distribution will work.
 
 ```bash
 pdflatex historicity
@@ -49,9 +56,27 @@ Or with `latexmk`:
 latexmk -pdf historicity
 ```
 
+### Supplement
+
+The supplement requires **XeLaTeX** (for Unicode Greek text) and the
+**STIX Two Text** font (ships with macOS; available via `texlive-fonts-extra`
+on Linux or directly from <https://github.com/stipub/stixfonts>).
+
+```bash
+xelatex historicity-supplement
+xelatex historicity-supplement
+```
+
+To regenerate `supplement_body.tex` from the SBLGNT source (normally only
+needed if the classification table in `scripts/build_supplement.py` changes):
+
+```bash
+python3 scripts/build_supplement.py
+```
+
 ### Package requirements
 
-The preamble uses `natbib`, `hyperref`, `titlesec`, `fancyhdr`, `setspace`, `booktabs`, `enumitem`, `xcolor`, `amsmath`, `amssymb`, and `geometry` (all standard). Three further packages — `csquotes`, `epigraph`, and `textgreek` — are used if available and transparently fall back to built-in equivalents if not, so the document compiles on minimal TeX installations.
+The main-paper preamble uses `natbib`, `hyperref`, `titlesec`, `fancyhdr`, `setspace`, `booktabs`, `enumitem`, `xcolor`, `amsmath`, `amssymb`, and `geometry` (all standard). Three further packages — `csquotes`, `epigraph`, and `textgreek` — are used if available and transparently fall back to built-in equivalents if not, so the document compiles on minimal TeX installations. The supplement additionally needs `fontspec` (XeLaTeX-only).
 
 ## Citing this paper
 

@@ -1,0 +1,267 @@
+%%% historicity-supplement.tex — Supplementary material
+%%% Compile: xelatex historicity-supplement && xelatex historicity-supplement
+%%%
+%%% Full Greek text (SBLGNT) of the seven undisputed Pauline letters with
+%%% every occurrence of the adelph- family of lexemes colour-coded by
+%%% classification (A = community, B = biological, C = disputed).
+
+\documentclass[11pt,oneside]{article}
+
+\usepackage[letterpaper,margin=1in,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\IfFileExists{csquotes.sty}%
+  {\usepackage[autostyle,english=american]{csquotes}}%
+  {\providecommand{\enquote}[1]{``##1''}}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,urlcolor=blue!60!black]{hyperref}
+
+%% –– Fonts ––
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{STIX Two Text}
+\newfontfamily\greekfont{STIX Two Text}
+\newfontfamily\greekfontsf{STIX Two Text}
+
+%% –– Headers ––
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Supplement: \textit{adelph-} occurrences in Paul}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+%% –– Classification colours ––
+% A — community / fellow-believer (the overwhelming majority)
+\definecolor{colorA}{HTML}{1B7A3E}   % forest green
+% B — unambiguously biological sibling (none found in authentic Paul)
+\definecolor{colorB}{HTML}{B22222}   % firebrick
+% C — disputed or ambiguous
+\definecolor{colorC}{HTML}{C77700}   % burnt amber
+
+\newcommand{\adeA}[1]{\textcolor{colorA}{\textbf{#1}}}
+\newcommand{\adeB}[1]{\textcolor{colorB}{\textbf{#1}}}
+\newcommand{\adeC}[1]{\textcolor{colorC}{\textbf{#1}}}
+
+%% –– Layout macros for verse/chapter/book ––
+\newcommand{\vs}[1]{\textsuperscript{\scriptsize #1}}
+\newcommand{\chapheader}[1]{%
+  \par\vspace{0.6em}\noindent\textbf{\large #1}\quad\ignorespaces}
+\newcommand{\booksection}[2]{%
+  \clearpage
+  \section*{#1\hfill\normalfont\normalsize\textit{#2}}
+  \markboth{#1}{#1}%
+  \vspace{0.5em}}
+
+%% –– Fine-tune paragraph formatting for running text ––
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.25em}
+
+\begin{document}
+
+%% –– Title block ––
+\begin{center}
+  {\LARGE\bfseries Supplementary Material:\\[4pt]
+   \textit{Adelph-} Lexeme Occurrences in the\\[2pt]
+   Undisputed Pauline Corpus}\\[18pt]
+  {\large Companion to \textit{The Evidentiary Status of the Historical Jesus: A Critical Assessment}}\\[6pt]
+  {\normalsize Stan Thomas}\\[4pt]
+  {\normalsize Independent Researcher, St.\ George, Utah\\
+   ORCID: 0000-0002-8828-7856}\\[12pt]
+  {\normalsize Draft of \today}
+\end{center}
+
+\vspace{1em}
+
+\section*{Purpose}
+
+This supplement reproduces the full Greek text (SBLGNT) of the seven
+undisputed Pauline letters---Romans, 1--2 Corinthians, Galatians,
+Philippians, 1 Thessalonians, and Philemon---with every occurrence of
+the \textit{adelph-} family of lexemes (\textit{adelphos}, G80;
+\textit{adelph\=e}, G79; \textit{pseudadelphos}, G5569;
+\textit{philadelphia}, G5360) highlighted in colour and classified into
+one of three buckets.  Its purpose is to make the lexical argument of
+\S3.5 of the main paper (Galatians 1:19 and 1 Corinthians 9:5, the
+\textit{adelphos tou kyriou} passages) independently verifiable: every
+token is locatable, and the classification of every token is on the
+page.
+
+\section*{Classification scheme}
+
+\begin{description}[leftmargin=2em]
+\item[\adeA{A — Community / fellow-believer}] The token denotes a member
+of the early Christian movement---a \textit{brother in Christ}.  Includes
+vocative addresses (``brothers, I urge you\ldots''), named coworkers
+identified as ``the brother'' (Timothy, Apollos, Titus, Epaphroditus,
+Sosthenes, Quartus, Onesimus), abstract \textit{philadelphia}, and
+\textit{pseudadelphos} (``false brother'').  Also includes the
+believing-spouse language of 1~Corinthians~7:12--15 (a believer who
+happens to be married to an unbeliever), where the term is applied
+because of community membership, not marriage.
+
+\item[\adeB{B — Unambiguously biological sibling}] The token denotes a
+person's biological brother or sister in a context where no community
+reading is defensible.  \textbf{In the authentic Pauline corpus, this
+bucket is empty.}  Outside the two disputed ``of the Lord'' passages,
+Paul never uses any \textit{adelph-} lexeme to denote a biological
+sibling.
+
+\item[\adeC{C — Disputed or ambiguous}] The token admits both a
+community and a kinship reading, or neither cleanly.  Four tokens in
+the corpus fall here:
+\begin{itemize}[leftmargin=2em]
+\item \textbf{Rom 9:3} — ``my brothers, my kinsmen
+\textit{kata sarka}''---an ethnic-kinship idiom for fellow Israelites,
+neither community-Christian nor nuclear-family biological.
+\item \textbf{Rom 16:15} — ``Nereus and his sister''---could be a
+biological sibling or simply a fellow-believer.
+\item \textbf{1 Cor 9:5} — \textit{hoi adelphoi tou kyriou}, ``the
+brothers of the Lord''---plural class label cited parallel to ``the
+other apostles'' and ``Cephas.''
+\item \textbf{Gal 1:19} — \textit{ton adelphon tou kyriou}, ``James
+the brother of the Lord''---the single passage most frequently cited
+as decisive for the historicity of Jesus.
+\end{itemize}
+\end{description}
+
+\section*{Summary tally}
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+Book & A & B & C & Total \\
+\midrule
+Romans           & 18 & 0 & 2 & 20 \\
+1 Corinthians    & 37 & 0 & 1 & 38 \\
+2 Corinthians    & 13 & 0 & 0 & 13 \\
+Galatians        & 11 & 0 & 1 & 12 \\
+Philippians      &  9 & 0 & 0 &  9 \\
+1 Thessalonians  & 20 & 0 & 0 & 20 \\
+Philemon         &  5 & 0 & 0 &  5 \\
+\midrule
+\textbf{Total}   & \textbf{117} & \textbf{0} & \textbf{4} & \textbf{121} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent
+121 tokens total (some verses contain two \textit{adelph-} tokens).  The
+zero in column B is the central observation: Paul's \textit{adelph-}
+vocabulary has no clearly biological-sibling register outside the two
+contested ``of the Lord'' cases.  The historicist rebuttal that
+\textit{adelphos tou kyriou} is a ``specifically modified kinship
+construction'' assumes the existence of a separate biological-sibling
+usage from which the modified form is drawn; no such usage exists in
+the authentic corpus.
+
+\section*{Source and method}
+
+The Greek text is the \textbf{SBL Greek New Testament} (SBLGNT, 2010),
+edited by Michael W.\ Holmes and published by the Society of Biblical
+Literature.  It is distributed under a Creative Commons
+Attribution~4.0 International licence.  The text has been reproduced
+here with editorial sigla (diamonds, brackets, and dots marking
+apparatus variants) silently removed for readability; no words have
+been altered.
+
+Tokens were located by regular-expression matching of any Greek word
+containing the root substring \textit{λφ} and cross-verified against
+the Englishman's Greek Concordance on Bible Hub.  Verse-by-verse
+classifications were assigned by the author; the machinery that
+converts classifications into colour markup is a short Python script
+included in the project repository at
+\url{https://github.com/sbthomas/historicity}.
+
+\vspace{0.5em}
+\noindent\textbf{Colour legend:} \adeA{green bold = A (community)} —
+\adeB{red bold = B (biological)} —
+\adeC{amber bold = C (disputed)}.
+
+\clearpage
+
+%% ============================================================
+%%  The full running text
+%% ============================================================
+
+\input{supplement_body.tex}
+
+\clearpage
+
+%% ============================================================
+%%  Appendix: the four C-classified tokens
+%% ============================================================
+
+\section*{Appendix: The four C-classified tokens in context}
+
+\subsection*{Romans 9:3 --- \textit{adelph\^on m\=ou t\^on syngen\^on m\=ou kata sarka}}
+
+\noindent\enquote{I could wish myself accursed from Christ on behalf
+of my \adeC{brothers}, my kinsmen \textit{according to the flesh}.}
+
+Paul's qualifier \textit{kata sarka} (``according to the flesh'')
+marks this use as ethnic/tribal rather than nuclear-family kinship:
+the ``brothers'' in view are fellow Israelites, the Jewish people as
+a collective.  This is neither standard community usage (which would
+not require the qualifier) nor a reference to biological siblings.
+Classified C as sui generis.  Does not support a biological-sibling
+reading of \textit{adelphos} elsewhere in Paul.
+
+\subsection*{Romans 16:15 --- \textit{N\=erea kai t\=en adelph\=en autou}}
+
+\noindent\enquote{Greet Philologus and Julia, Nereus and his
+\adeC{sister}, and Olympas, and all the saints who are with them.}
+
+The pronoun \textit{autou} (``his'') makes biological kinship
+grammatically natural: a greeting to Nereus and the sister he happens
+to have.  But it is equally consistent with a fellow-believer who is
+in a ``sister of''-style relation to Nereus within the community
+(compare Phoebe described as \textit{h\=e adelph\=e h\=em\=on},
+``our sister,'' in 16:1).  Classified C to be conservative; the
+biological reading is defensible here, but not forced.
+
+\subsection*{1 Corinthians 9:5 --- \textit{hoi adelphoi tou kyriou}}
+
+\noindent\enquote{Do we not have the right to be accompanied by a
+believing wife [\textit{adelph\=en gynaika}, classified A], as do the
+other apostles and \adeC{the brothers of the Lord} and Cephas?}
+
+Paul enumerates three categories of authority: (1) the other
+apostles, (2) the brothers of the Lord, (3) Cephas.  The phrase
+\textit{hoi adelphoi tou kyriou} is plural and functions as a
+class-label, not a biographical identifier.  If this phrase means
+``biological siblings of Jesus,'' the entire collective of Jesus's
+siblings is travelling the Mediterranean as recognised authority
+figures, cited parallel to the apostolic college and Peter
+individually.
+
+\subsection*{Galatians 1:19 --- \textit{t\^on adelph\^on tou kyriou}}
+
+\noindent\enquote{Of the other apostles I saw none, except James,
+\adeC{the brother of the Lord}.}
+
+The single passage most frequently cited as decisive for historicity.
+The biological reading (James as Jesus's biological sibling) is
+possible; the community-title reading (James as a member of a
+recognised group called ``brothers of the Lord,'' see 1~Cor~9:5) is
+equally compatible with Paul's phrasing and more parsimonious with
+his usage elsewhere.  Paul's default meaning of \textit{adelphos}
+throughout the corpus is fellow-believer (117 A-classified
+occurrences), and the fixed referent of \textit{ho kyrios} in
+Paul---the risen, cosmic Christ, not a recently-living
+Galilean---tells against the biological reading.  The construction
+\textit{adelphos tou kyriou} does not, in Paul's vocabulary, have a
+clear biological template from which a kinship reading could be
+drawn.
+
+\vspace{2em}
+
+\noindent\rule{0.5\textwidth}{0.4pt}\par
+\vspace{0.5em}
+\small\noindent\textit{Attribution:} Greek text of the New Testament
+from the SBL Greek New Testament, edited by Michael W.\ Holmes.
+Copyright~\textcopyright~2010, Society of Biblical Literature and
+Logos Bible Software.  Used under a Creative Commons Attribution~4.0
+International licence (\url{https://creativecommons.org/licenses/by/4.0/}).
+
+\end{document}

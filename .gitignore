@@ -8,6 +8,11 @@
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+*.xdv
+
+## Python
+__pycache__/
+*.pyc
 
 ## Editor / OS
 .DS_Store
