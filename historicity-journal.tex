@@ -1,0 +1,937 @@
+%%% historicity-journal.tex — Journal-length compressed version
+%%% Compile: pdflatex historicity-journal && bibtex historicity-journal
+%%%          && pdflatex historicity-journal (twice)
+%%%
+%%% Target: ~12,000 words, submittable to History of Religions,
+%%% Journal for the Study of the Historical Jesus, The Journal of
+%%% Religion, or similar venues. Full-length paper and two
+%%% supplementary documents are cited as supporting material for
+%%% evidence the journal article summarises rather than develops.
+
+\documentclass[12pt,oneside]{article}
+\usepackage[letterpaper,margin=1in,headheight=14pt]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb}
+\usepackage{setspace}
+\onehalfspacing
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Historical Jesus: An Evidentiary Reassessment}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\usepackage[authoryear,sort&compress]{natbib}
+\bibliographystyle{plainnat}
+\usepackage{xcolor}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,
+            citecolor=blue!60!black,urlcolor=blue!60!black]{hyperref}
+\usepackage{booktabs}
+\usepackage{enumitem}
+
+\IfFileExists{csquotes.sty}%
+  {\usepackage[autostyle,english=american]{csquotes}}%
+  {\providecommand{\enquote}[1]{``##1''}}
+
+\newcommand{\eg}{\textit{e.g.}}
+\newcommand{\ie}{\textit{i.e.}}
+\newcommand{\cf}{\textit{cf.}}
+\newcommand{\circa}{\textit{c.}\,}
+\newcommand{\grk}[1]{\textit{#1}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries The Historical Jesus:\\[4pt]
+   An Evidentiary Reassessment}\\[18pt]
+  {\large Stan Thomas}\\[4pt]
+  {\normalsize Independent Researcher, St.\ George, Utah\\
+   ORCID: 0000-0002-8828-7856}\\[12pt]
+  {\normalsize Draft of \today}
+\end{center}
+
+\vspace{1em}
+
+\begin{abstract}
+\noindent
+The historicity of Jesus of Nazareth is treated as settled in mainstream
+New Testament scholarship.  This paper argues that the confidence is
+unwarranted.  Drawing on a corpus-linguistic baseline study of 212
+\textit{adelphos} tokens across six non-Christian Greek corpora, an
+inscriptional survey of Greek religious-association usage of
+\textit{adelphoi tou} [patron] (Harland 2005), a text-critical and
+stylometric analysis of the Pauline passages historically adduced
+against mythic-origin accounts, and a Bayesian sensitivity analysis
+that implements source-dependency in the cumulative case, I argue
+that (i)~the Pauline corpus describes a revelatory celestial figure
+assembled from pre-Christian Jewish apocalyptic-mystical sources;
+(ii)~the principal Pauline evidence traditionally cited against
+mythic-origin scenarios, while non-trivial, is textually secure
+and therefore not susceptible to interpolation arguments; (iii)~the
+Gospels are not independent historical testimony but literary
+constructions from Hebrew Bible templates; (iv)~the non-Christian
+attestation is weaker than claimed and largely dependent on early
+Christian informants; and (v)~under plausible assumptions the
+posterior probability of historicity lands in open-question rather
+than settled territory.  The responsible conclusion is that the
+question is genuinely contested and that the scholarly consensus is
+sustained in part by institutional and methodological inertia.
+Full evidence and supplementary material are available in a
+companion full-length treatment.
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} historical Jesus, mythicism, Pauline
+epistles, corpus linguistics, \textit{adelphos tou kyriou}, Jewish
+apocalyptic mysticism, Bayesian historiography.
+\end{abstract}
+
+%% ============================================================
+\section{Introduction}
+%% ============================================================
+
+Does the evidence warrant the confidence of the historical-Jesus
+consensus?  Mainstream New Testament scholarship treats the
+historicity of Jesus as settled.  \citet{Ehrman2012} writes that
+\enquote{virtually every competent scholar of antiquity, Christian
+or non-Christian, agrees} that Jesus existed.  \citet{Dunn2003}
+similarly: \enquote{today nearly all historians, whether Christians
+or not, accept that Jesus existed.}  These claims are defensive
+statements of consensus rather than evidentiary arguments, and
+consensus about ancient persons is not evidence in the same sense
+that primary attestation is.  The question this paper raises is
+whether the primary evidence supports the confidence the consensus
+projects.
+
+The answer developed here is that it does not.  When each category
+of evidence is examined on its own terms---without granting
+historicity as a prior, without conflating consensus with
+confirmation, and without suppressing the evidential weight of
+absent evidence---the positive case is remarkably thin.  It reduces,
+on close examination, to the interpretation of a single ambiguous
+phrase in a single Pauline letter (Galatians~1:19), supported by
+heuristic arguments about what is typical of religious movements.
+The remaining evidence either fails textual scrutiny, derives from
+the internal tradition of the movement itself, or is
+indistinguishable from what we would expect if no specific
+historical individual underlay the tradition.
+
+The argument is not that Jesus definitely did not exist, and
+intellectually honest mythic-origin scenarios do not claim as much.
+Several passages in Paul---notably Galatians~4:4, Romans~1:3--4,
+and the witness list in 1~Corinthians~15:3--8---pose genuine
+challenges for mythic-origin accounts that must be acknowledged and
+weighed.  The argument is that the evidence does not establish
+historicity with the confidence the consensus claims, that a
+well-constructed mythic-origin scenario drawing on Jewish
+apocalyptic-mystical resources (not pagan mystery cults) is a
+serious alternative that survives scrutiny of its weaknesses, and
+that the consensus is sustained partly by the institutional
+structure of the field rather than by evidential weight alone.
+
+\paragraph{Scope of the present article.}
+The full-length treatment of this argument (\textit{The Evidentiary
+Status of the Historical Jesus: A Critical Assessment}, 84 pp.,
+available at \url{https://github.com/sbthomas/historicity}) develops
+the case at length, with two supplementary documents: a complete
+colour-coded enumeration of every \textit{adelph-} family lexeme in
+the seven undisputed Pauline letters, and a corpus-linguistic
+baseline study of 212 random-sampled \textit{adelphos} tokens across
+six non-Christian Greek corpora with an appendix of twenty-five
+inscriptional cases of associative-community usage.  This article
+presents the core argument in condensed form.  Evidence for which
+space does not permit full development here is referenced to the
+full-length treatment and its supplements.
+
+%% ============================================================
+\section{Methodological Preliminaries}
+%% ============================================================
+
+Four methodological commitments orient the argument.
+
+\paragraph{Consensus is not evidence.}
+Arguments from authority are heuristics, not independent evidential
+contributions.  The epistemic value of a consensus depends on the
+independence and quality of the underlying evidential judgements.
+A consensus among scholars trained within the same paradigm, who
+have absorbed the same default assumptions during professional
+formation and who operate within institutions that presuppose the
+conclusion in question, carries less evidential weight than a
+consensus formed by independent evaluation of primary data.  This
+paper treats the historicity consensus as a datum to be explained,
+not as evidence to be weighed.
+
+\paragraph{The Bayesian framework with source-dependence.}
+Historical inference is inherently probabilistic.  \citet{Carrier2014}
+applied a Bayesian framework systematically in \textit{On the
+Historicity of Jesus}.  The framework itself is sound; the specific
+point estimates Carrier assigns have been contested, as have the
+independence assumptions underlying his multiplication of likelihood
+ratios \citep{Vridar2014,Tucker2004}.  \citet{Tucker2004} makes the
+critical observation that Bayesian historical inference is
+particularly sensitive to the independence of contributing
+testimonies: when textual-critical research shows that Gospel
+attestations collapse to Markan or Q dependence, the effective
+likelihood contribution is the contribution of Mark, not the
+independent-multiplicative contribution of each synoptic Gospel
+treated as independent.  A supplementary computational tool
+(\textit{scripts/bayesian\_sensitivity.py} in the project repository)
+implements this explicitly: under plausible point-estimate
+likelihood ratios for each evidentiary strand and a neutral prior
+$P(H)=0.5$, the dependency-aware posterior for historicity falls in
+the range $0.23$--$0.39$---open-question territory by any reasonable
+standard.  The exercise is a sensitivity analysis, not a definitive
+computation.
+
+\paragraph{Absence of evidence as evidence of absence.}
+\enquote{Absence of evidence is not evidence of absence} is, in
+general contexts, a truism that misrepresents the Bayesian point.
+The correct principle is that absence of evidence \textit{is}
+evidence of absence when the evidence would be expected to exist
+under the hypothesis, with strength proportional to the
+expectation \citep{Sober2009,Carrier2012}.  Where $n$ independent
+channels each would produce evidence with probability $p$ under
+hypothesis $H$ but probability $q < p$ under $\neg H$, the
+cumulative likelihood ratio from silence is $(q/p)^n$, which
+becomes small even when individual ratios are modest.  This
+structure is developed below for the silence of Philo, Justus of
+Tiberias, the Mishnah, and Roman administrative records.
+
+\paragraph{The collapse of the criteria of authenticity.}
+The traditional criteria of historical-Jesus research---embarrassment,
+multiple attestation, dissimilarity, coherence---have been
+subjected to devastating criticism from within mainstream
+scholarship itself \citep{Allison2010,Keith2024}.  \citet{Keith2024}
+and collaborators have explicitly argued that \enquote{the era of
+the hard version of the criteria of authenticity is over}; the field
+must move toward memory theory and reception history.  The paper
+accepts this methodological consensus.  Its implication is that the
+principal tools by which historicists have claimed to identify a
+\enquote{historical core} beneath theological overlay are now
+recognised as methodologically unreliable by the historicists
+themselves.  If the criteria cannot reliably distinguish historical
+material from theological invention, the Gospels cannot serve as
+positive evidence for a specific historical figure.
+
+\paragraph{Comparative perspective.}
+Discussions of Jesus's historicity are routinely conducted as if the
+question were unique.  It is not.  A class of comparable figures
+whose putative historicity has been seriously questioned within
+modern scholarship exists, and examining how those cases have been
+resolved yields diagnostic criteria.  Pilate's existence was
+settled by the 1961 Caesarea inscription \citep{Vardaman1962}.
+Socrates is secured by multiple \textit{independent} contemporary
+attestations---Plato, Xenophon, Aristophanes, Aristotle.
+\textbf{Moses} is rejected by most modern Egyptologists on the
+ground of archaeological silence in a place and period where
+evidence would be expected \citep{FinkelsteinSilberman2001,ThompsonTL1999}.
+\textbf{Lycurgus of Sparta} is treated as non-historical: late and
+derivative literary sources, founder-myth conformity
+\citep{Cartledge2001}.  \textbf{Romulus} is universally rejected as
+historical despite a sophisticated literary tradition placing him in
+a specific setting \citep{Beard2015,Wiseman1995}.
+\textbf{Pythagoras}, \textbf{King Arthur}, \textbf{Homer}, and
+\textbf{Laozi} are genuinely contested, with the consensus on each
+oscillating between \enquote{probable historical kernel with
+extensive legendary accretion} and \enquote{composite literary
+construction} \citep{Riedweg2005,Higham2002,WestML2011,GrahamA1986}.
+
+Applying the diagnostic criteria to Jesus: he lacks the direct
+contemporary physical attestation of Pilate, he lacks the multiple
+independent contemporary literary attestation of Socrates, and his
+Gospel biographical sources are literary-critically constructed
+from prior templates (as with Lycurgus, Romulus, and Laozi).  His
+profile most closely matches the \textbf{Pythagoras/Arthur/Homer/Laozi}
+category of genuinely contested figures, not the Pilate/Socrates
+category of secured figures.  The methodological implication is
+that the field's confidence in historicity is incommensurate with
+the evidence by the standards of comparable existence-questions.
+
+%% ============================================================
+\section{The Pauline Evidence}
+%% ============================================================
+
+The letters attributed to Paul constitute the earliest stratum of
+surviving Christian writing.  If a historical Jesus existed and was
+known to Paul's contemporaries, this is where we would expect to
+find the clearest traces.  The Pauline corpus is therefore the most
+important body of evidence in the historicity debate.
+
+%% ------------------------------------------------------------
+\subsection{The Character of Paul's Jesus}
+%% ------------------------------------------------------------
+
+The central observation, developed in detail by
+\citet{Doherty1999,Doherty2009}: Paul's Jesus lacks the attributes
+of a recently-living historical person.  Paul never names Jesus's
+parents, birthplace, or hometown.  He provides no physical
+description.  He narrates no events from Jesus's earthly
+life---no ministry, no healings, no exorcisms, no parables, no
+conflicts with authorities, no trial, no specific date or location
+of execution.  He does not identify Judas as a betrayer or name
+Pilate.  He does not place the crucifixion at Golgotha, in
+Jerusalem, or indeed anywhere on earth.
+
+What Paul does describe is a cosmic soteriological drama.  Jesus is
+a pre-existent divine figure who \enquote{emptied himself} and took
+on the \enquote{form of a servant} (Philippians~2:5--11---itself
+likely a pre-Pauline hymn), who was \enquote{declared to be Son of
+God in power according to the Spirit of holiness by his
+resurrection from the dead} (Romans~1:4), who was \enquote{handed
+over} (\grk{paradidomi}, a term routinely translated
+\enquote{betrayed} in 1~Corinthians~11:23 to harmonise with the
+Gospel narrative but whose primary meaning is
+\enquote{delivered up}), and who died \enquote{in accordance with
+the scriptures} and was raised \enquote{on the third day in
+accordance with the scriptures} (1~Corinthians~15:3--4).
+
+Paul explicitly tells us how he came to know this Christ:
+\enquote{I did not receive [the gospel] from any human source nor
+was I taught it, but I received it through a revelation
+(\grk{apokalypsis}) of Jesus Christ} (Galatians~1:12);
+\enquote{when God\ldots was pleased to reveal his Son in me}
+(Galatians~1:16); \enquote{I went up in response to a revelation}
+(Galatians~2:2); \enquote{I know a person in Christ who fourteen
+years ago was caught up to the third heaven\ldots caught up into
+Paradise and heard things that are not to be told}
+(2~Corinthians~12:2--4).  This is the epistemic profile of a Jewish
+mystical-apocalyptic visionary, not of a disciple of a recently-
+living teacher.  We return to this point below.
+
+%% ------------------------------------------------------------
+\subsection{\textit{Adelphos tou Kyriou}: \enquote{Brother of the Lord}}
+%% ------------------------------------------------------------
+
+If the foregoing is correct, the principal historicist evidence
+from the Pauline corpus is a single passage: Galatians~1:19.
+Paul, describing his first visit to Jerusalem, writes that he saw
+no other apostle \enquote{except James, \grk{ton adelphon tou
+kyriou}---the brother of the Lord.}  The historicist reading is
+straightforward: James was the biological brother of Jesus.
+\citet{Ehrman2012} considers this passage virtually decisive.
+
+The passage deserves careful scrutiny because it is being asked to
+carry the weight of the historicist case.  Three considerations
+complicate the biological-sibling reading.
+
+\paragraph{Paul's own distributional usage.}
+The seven undisputed Pauline letters contain exactly 121 occurrences
+of the \grk{adelph-} family of lexemes (\grk{adelphos},
+\grk{adelph\=e}, \grk{pseudadelphos}, \grk{philadelphia}).  Of
+these, 117 are unambiguously community/fellow-believer uses, 3 are
+disputed (1~Cor~9:5 \grk{hoi adelphoi tou kyriou}, Gal~1:19 itself,
+Rom~16:15 Nereus and his sister), and 1 is ethnic/covenantal
+(Rom~9:3 \grk{adelph\^on mou kata sarka}, fellow-Israelites).
+\textbf{Zero} Pauline tokens unambiguously denote a biological
+sibling outside the two disputed \grk{tou kyriou} passages.  This
+is not a selective sample; it is the complete corpus, colour-coded
+in the project's Pauline supplement.
+
+The historicist reply is that \grk{adelphos tou kyriou} is a
+\textit{specifically modified} construction and that the 117
+generic uses of plain \grk{adelphos} do not govern the kinship
+reading of the genitive phrase.  That reply assumes the existence
+of a separate biological-sibling usage from which the modified
+form is drawn.  In Paul, there is no such usage.  The biological
+reading of Galatians~1:19 requires Paul to have used
+\grk{adelphos} in a unique sense in this one phrase---a lexical
+register Paul exhibits nowhere else in his authentic corpus.
+
+\paragraph{The parallel in 1~Corinthians~9:5.}
+The decisive test case is 1~Corinthians~9:5: \enquote{Do we not
+have the right to be accompanied by a believing wife, as do the
+other apostles and \grk{hoi adelphoi tou kyriou} and Cephas?}
+Paul is listing categories of authoritative figures:
+(i)~the other apostles, (ii)~the brothers of the Lord,
+(iii)~Cephas.  Three distinct groups or individuals, cited in
+parallel as recognised authority classes.  \enquote{The brothers
+of the Lord} is \textit{plural} and functions as a class label.
+
+If this phrase means \enquote{biological siblings of Jesus}, then
+there exists a group of biological siblings sufficiently prominent
+to be cited as a recognised authority class alongside the
+apostolic college and Peter individually.  The simpler reading is
+available: \enquote{brothers of the Lord} names a designated group
+or rank within the movement---an inner circle, a faction, or a
+class---distinguished from \enquote{apostles} and from individual
+leaders like Cephas.
+
+\paragraph{The corpus-linguistic baseline.}
+A corpus-linguistic study (full methodology in the supplementary
+\textit{baseline} document) random-samples 212 \grk{adelphos}
+tokens from six non-Christian contemporary-or-earlier Greek
+corpora: papyri (100~BCE--70~CE), the Septuagint, Philo of
+Alexandria, Josephus, pre-Pauline literary (Polybius, Diodorus,
+Strabo), and Hellenistic literary (Plutarch, Epictetus, Dio
+Chrysostom).  Classification into A~(community / voluntary
+association), B~(biological sibling), C~(disputed), D~(ethnic /
+covenantal), E~(literary metaphor) yields:
+
+\begin{center}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Corpus & A\% & B\% & C\% & D\% & E\% \\
+\midrule
+Papyri (pre-70 CE), $n{=}35$ & 0.0 & 100.0 & 0.0 & 0.0 & 0.0 \\
+LXX, $n{=}35$                & 0.0 & 68.6  & 5.7 & 25.7 & 0.0 \\
+Josephus, $n{=}35$           & 0.0 & 60.0  & 5.7 & 34.3 & 0.0 \\
+Philo, $n{=}35$              & 2.9 & 57.1  & 2.9 & 5.7  & 31.4 \\
+Hellenistic lit., $n{=}36$    & 0.0 & 80.6  & 0.0 & 2.8  & 16.7 \\
+Pre-Pauline lit., $n{=}36$   & 2.8 & 94.4  & 0.0 & 0.0  & 2.8 \\
+\midrule
+\textbf{Aggregate}, $N{=}212$ & \textbf{0.9} & \textbf{76.9} & 2.4 & 11.3 & 8.5 \\
+\midrule
+\textbf{Paul}, $N{=}121$     & \textbf{96.7} & \textbf{0.0} & 2.5 & 0.8 & 0.0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The nominal ratio of Pauline-to-baseline A-rate is approximately
+103~to~1; Wilson 95\% confidence intervals do not overlap.  This
+figure is a \textit{lower bound} of the ratio: the sampled baseline
+excludes the Greek inscriptional register, where, as
+\citet{Harland2005} and the Kloppenborg-Ascough \citep{KloppenborgAscough2011}
+corpus document, voluntary religious-association usage of
+\grk{adelphoi} concentrates.  Factoring inscriptions in would raise
+the baseline A-rate to roughly 5--15\% and compress the ratio to
+roughly 10--20$\times$.  The qualitative finding---that Paul's
+usage is distinctive against ambient Greek---survives this
+correction.  The quantitative claim of 103$\times$ does not, and
+should not be cited in isolation.
+
+What the corrected analysis reveals is interesting in its own
+right.  Paul's usage is \textit{not} distinctive against the
+Greek religious-associative sub-register, where community-title
+\grk{adelphoi} with genitive-of-patron is well attested.  Twenty-
+five inscriptional cases documented in the supplementary
+\textit{baseline} document (principally the \enquote{adopted
+brothers of Theos Hypsistos} at Tanais, c.~155--240~CE) establish
+the specific construction \grk{adelphoi tou} [patron figure] as
+formally normal in Greek voluntary religious associations of the
+period.  The Pauline \grk{adelphoi tou kyriou} instantiates that
+convention; it does not require it, but it does not depart from
+it either.
+
+\paragraph{Assessment.}
+When the three considerations combine---no biological-sibling
+register in Paul's own corpus, the class-label parallel in
+1~Cor~9:5, and the well-attested Greek associative-community
+convention---the community-title reading of Galatians~1:19 is the
+more parsimonious reading.  The historicist reading is possible
+but requires Paul to depart from his own attested usage, from the
+parallel within his own corpus, and from a convention attested in
+the religious-associative sub-register within which he is writing.
+
+Galatians~1:19 is \textit{compatible with} historicity; it does
+not \textit{require} it.
+
+%% ------------------------------------------------------------
+\subsection{The Passages That Do Challenge Mythic-Origin Scenarios}
+%% ------------------------------------------------------------
+
+Several Pauline passages pose genuine difficulties for mythic-
+origin scenarios and must be acknowledged rather than dismissed.
+
+\paragraph{Romans~1:3.}
+\enquote{descended from the seed of David according to the flesh}
+(\grk{tou genomenou ek spermatos Dauid kata sarka}).  Davidic
+descent is a genealogical claim.  \citet{Novenson2012,Novenson2017}
+has documented that messianic language in Second Temple Judaism
+operates within constraints that make \enquote{messiah} a human-
+historical designation, not a detachable cosmic abstraction.  The
+mythic-origin response runs along three lines: first, that
+Romans~1:3--4 is widely recognised as a pre-Pauline creedal
+fragment that Paul quotes rather than composes \citep{Jewett2007};
+second, that \grk{kata sarka} (\enquote{according to the flesh})
+is a technical Pauline phrase that can locate an event in the
+sublunar realm without committing to a specific earthly biography
+\citep{Carrier2014}; third, that Davidic-descent claims could arise
+through scriptural exegesis (reading Jer~23:5, Ps~89, 2~Sam~7 as
+requiring a Davidic lineage for any messianic figure) rather than
+through biographical memory.  None of these responses fully
+dissolves the tension.  The honest concession is that Rom~1:3--4
+is weak evidence for historicity that the mythic-origin scenario
+must accommodate.
+
+\paragraph{Galatians~4:4.}
+\enquote{born of a woman, born under the law}.  A bare
+incarnation-into-Jewishness claim that could reflect memory of a
+historical Jewish Jesus or could reflect the heavenly mediator's
+descent through an earthly birth into the covenantal community.
+Like Rom~1:3, compatible with both hypotheses but more naturally
+historicist.
+
+\paragraph{1~Corinthians~15:3--8.}
+The resurrection creed with witness list.  Verses~3--5 are a
+universally-acknowledged pre-Pauline formula; verses~6--8 extend to
+a specific list of resurrection appearances (Cephas, the Twelve,
+five hundred brothers, James, all the apostles, Paul himself).
+The specificity of the witness list, especially the \enquote{over
+five hundred brothers} figure, is the hardest Pauline datum for
+mythic-origin scenarios.  The mythic-origin response locates the
+witness list within the established Second Temple pattern of
+\textit{post-mortem visionary experience attributed to multiple
+members of a sectarian community}, the paradigm example of which
+is the Qumran Self-Glorification Hymn (4Q491c) where an unnamed
+speaker claims heavenly ascent and reception by the angelic council
+\citep{Collins1995,Knohl2000}.  Visionary experience of a heavenly
+figure by multiple community members is attested in pre-Christian
+Jewish mystical-apocalyptic contexts.  This does not fully
+dissolve the tension either.
+
+\paragraph{Textual and stylometric stability.}
+A text-critical and preliminary stylometric analysis (full details
+in the full-length paper, §3.1, and in
+\textit{scripts/stylometry.py}) establishes that these contested
+passages are \textit{textually secure}.  They are attested in
+\textbf{P46} (the Chester Beatty Pauline papyrus, \circa 200~CE),
+in all major subsequent codices, and are present in Marcion's
+reconstructed text where reconstruction is possible.  Stylometric
+distance-from-baseline, which correctly identifies known
+interpolations (1~Thess~2:14--16 and 1~Cor~14:34--35) as outliers,
+does \textit{not} flag the historicity-relevant passages as
+interpolation candidates: Galatians~1:18--20 in context has a
+stylometric distance from the Pauline baseline of 0.09, less
+distinctive than established interpolations ($\approx 0.10$) and
+less distinctive than the recognised pre-Pauline creedal formulae
+($\approx 0.17$).  The mythic-origin response to these passages
+\textit{cannot} therefore rely on text-critical or stylometric
+excision.  It must rely on semantic and contextual analysis, which
+is what the paper provides.
+
+\paragraph{Net Pauline picture.}
+The Pauline evidence is a mixed landscape.  The \grk{adelphos tou
+kyriou} passages, when analysed in their full Pauline distribution
+and against Greek associative-community convention, do not secure
+the historicist reading.  Paul's broader presentation of Jesus as
+a revelatory celestial figure known through \grk{apokalypsis} and
+scripture does not require a historical subject to explain the
+data.  The three conceded-difficulty passages
+(Rom~1:3--4, Gal~4:4, 1~Cor~15:3--8) admit mythic-origin readings
+that require interpretive work the historicist readings do not;
+this asymmetry is real and must be acknowledged.  The full
+analysis thus lands between the confident-historicist and
+confident-mythicist positions: the question is genuinely open.
+
+%% ============================================================
+\section{The Jewish-Apocalyptic Matrix}
+%% ============================================================
+
+An older popularisation of the mythic-origin hypothesis, associated
+with \citet{Frazer1890}, located its sources primarily in pagan
+Mediterranean mystery cults---Osiris, Attis, Adonis, Dionysus---and
+is what many readers think of when they encounter the phrase
+\enquote{mythicist hypothesis}.  That framing is the weakest
+version of the argument.  As \citet{Fredriksen2017,Fredriksen2018}
+insists, Paul is a Second Temple Jewish apocalyptic thinker
+operating within Jewish categories, not a syncretist blending in
+pagan myth.  The honest mythic-origin argument is that the Jesus
+tradition is constructed from the scriptural, apocalyptic, and
+mystical resources of Second Temple Judaism itself, with Hellenistic
+literary conventions providing secondary ambient shaping.
+
+\paragraph{Pre-existent heavenly mediators.}
+\citet{Boyarin2012} traces an attested \enquote{binitarian} strand
+through the Danielic Son of Man (Daniel~7:13--14), the
+\textit{Similitudes of Enoch} (1~Enoch~37--71), the Melchizedek
+traditions at Qumran (11QMelch), angelomorphic mediator figures
+across Second Temple apocalyptic literature, and the Logos of
+Philo of Alexandria.  Paul's Christ is not an exotic Hellenistic
+import into Judaism; he is a recognisable member of the Jewish
+pre-existent-mediator family.  The Philippians~2:5--11 descent-
+and-exaltation arc maps onto Second Temple patterns of
+angelomorphic humiliation and vindication (the Self-Glorification
+Hymn at Qumran, 4Q491c), not onto the death-and-rebirth cycle of
+Attis.
+
+\paragraph{Philo's Logos.}
+\citet{Sterling2001} documents Philo's Logos theology in detail.
+The Logos is pre-existent, functions as God's agent in creation,
+is called \enquote{son of God} and \enquote{firstborn}, is the
+mediator through whom humans approach God, and is sometimes
+described as \enquote{a second god} (\textit{deuteros theos},
+\textit{Questions on Genesis} 2.62).  Philo wrote in Alexandria in
+the same decades as Paul's formation.  The conceptual inventory
+from which early Christological language could be assembled was
+already available in Jewish-Hellenistic form; no pagan borrowing
+is required.
+
+\paragraph{The revelatory mechanism.}
+Second Temple Judaism possessed a specific, well-attested set of
+\textit{procedures} for generating religious knowledge about
+heavenly realities: visionary ascent through the heavens plus
+scriptural exegesis decoding the Hebrew Bible as encoding
+cosmic mysteries.  \citet{Scholem1941}, \citet{Gruenwald1980},
+\citet{Rowland1982}, and \citet{SchaferP2009} have documented this
+tradition across 1~Enoch, the Apocalypse of Abraham, the Ascension
+of Isaiah, the Qumran Self-Glorification Hymn, and the Merkabah
+and Hekhalot literatures.  Paul's explicit claims about his
+Christ-knowledge---received by \grk{apokalypsis} (Gal~1:12),
+revealed \enquote{in me} (Gal~1:16), received through
+\enquote{caught up to the third heaven}
+(2~Cor~12:2--4)---place him squarely within this Jewish mystical-
+apocalyptic procedural framework.  \citet{Segal1990} argued in
+detail that Paul's self-description matches the profile of a
+Jewish mystical visionary.
+
+None of the texts in this tradition requires a recent historical
+instantiation of the heavenly figure to explain the revelatory
+knowledge.  1~Enoch's Son of Man is a named, hidden, pre-existent
+heavenly figure who will appear at the end of days---not the memory
+of a recently-living person.  The Self-Glorification Hymn's
+enthroned speaker is a visionary claim, not a biographical report.
+The Christian community could have come to know its Christ by the
+same procedural route---scriptural exegesis plus visionary
+revelation---that comparable Second Temple communities used to
+come to know theirs.
+
+\paragraph{Crucifixion and Deuteronomy~21:23.}
+The specific mode of death is not well explained by pagan dying-
+and-rising cults (where divine deaths take varied forms).  It is
+well explained by scriptural logic.  Deuteronomy~21:23:
+\enquote{anyone hung on a tree is under God's curse.}  Paul
+explicitly cites this passage in Galatians~3:13: \enquote{Christ
+redeemed us from the curse of the law by becoming a curse for
+us---for it is written, `Cursed is everyone who hangs on a
+tree.'\,}  This is the engine of Paul's substitutionary-atonement
+soteriology.  For the theology to work, the mode of death must be
+\textit{scripturally cursed}.  Stoning, burning, beheading---none
+of these carry the specific scriptural curse that hanging on a
+tree does.  Crucifixion was chosen not \textit{despite} its
+scandalous character but \textit{because} it uniquely satisfied
+the scriptural requirement for a substitutionary-curse theology.
+
+\paragraph{Significance.}
+Every major element of Paul's Christology---pre-existence, descent,
+vicarious suffering, resurrection, exaltation, cosmic lordship---
+is derivable from Jewish scriptural and apocalyptic sources
+available in the first century.  This is \textit{a fortiori} the
+safer argumentative ground: the Jewish sources are textually
+secure (the Qumran material was effectively sealed by 70~CE and
+shows no Christian influence), whereas the pagan parallels face
+genuine scholarly contestation about dating, comparability, and
+direction of influence.  The honest mythic-origin scenario does
+not require recourse to Attis or Osiris.  Second Temple Judaism
+supplies the full theological machinery.
+
+%% ============================================================
+\section{The Gospel Evidence}
+%% ============================================================
+
+The canonical Gospels are routinely treated as evidence for
+historicity, both by the consensus and in popular understanding.
+The question is whether that treatment is warranted.
+
+It is uncontroversial in mainstream scholarship that the Gospels
+are not eyewitness accounts \citep{Ehrman2009}.  They are
+anonymous works (the names Mark, Matthew, Luke, John are second-
+century attributions), written in Greek by educated authors,
+forty to seventy years after the events they purport to describe,
+in communities far removed from rural Galilee.  They are
+theological documents built from identifiable literary templates.
+
+\paragraph{Scriptural construction of the passion narrative.}
+The passion narrative is constructed, point by point, from Hebrew
+Bible texts.  \textbf{Psalm~22:} \enquote{My God, my God, why have
+you forsaken me?} (Mk~15:34 / Ps~22:1); \enquote{They divide my
+garments} (Mk~15:24 / Ps~22:18); \enquote{All who see me mock me}
+(Mk~15:29 / Ps~22:7); \enquote{They pierce my hands and my feet}
+(Ps~22:16, reflected in the crucifixion itself).
+\textbf{Isaiah~53:} \enquote{He was oppressed and afflicted, yet
+he did not open his mouth} (Is~53:7; Mk~15:5); \enquote{He was
+numbered with the transgressors} (Is~53:12; Mk~15:27);
+\enquote{He bore the sin of many} (Is~53:12).
+\textbf{Wisdom of Solomon 2--5} provides the structural parallel
+of persecuted-righteous-one persecuted and vindicated
+\citep{Nickelsburg1972}.  \textbf{Zechariah:} the entry on a
+donkey (Zech~9:9 / Mk~11:1--7); thirty pieces of silver
+(Zech~11:12--13 / Mt~26:15); the shepherd struck, the sheep
+scattered (Zech~13:7 / Mk~14:27).  \textbf{Daniel~7:} the Son of
+Man coming on clouds (Dn~7:13--14 / Mk~14:62).
+
+The same pattern extends across the Gospel narrative arc: birth
+narratives built from Moses, Samuel, Isaac typology; ministry
+episodes recapitulating Elijah-Elisha; the ascension drawing on
+2~Kings~2:11 and Dn~7:13--14.  When every major episode can be
+derived from a specific scriptural source, the hypothesis that
+historical events \textit{preceded} the scriptural interpretation
+becomes less parsimonious than the hypothesis that scriptural
+sources \textit{generated} the narrative.  The tradition reads
+as a systematic programme of scriptural fulfilment---exactly how
+the Gospel authors themselves present it (Matthew's formula
+citations).
+
+\paragraph{What this establishes and what it does not.}
+It is important to be precise about the logical step the argument
+makes, because a historicist critic such as \citet{Allison2010}
+would correctly insist that scriptural templating of a narrative
+does not entail the non-existence of the subject.  Historical
+figures have been described in antiquity through scriptural and
+typological grammars.  Jewish historiography routinely employs
+Hebrew Bible typology to narrate the lives of real people
+(Maccabean heroes as new Judges, exilic returnees as new Exodus).
+That the Gospel passion is constructed from Ps~22 and Is~53 does
+not on its own prove that no crucifixion of Jesus occurred.
+
+The conclusion the argument supports is narrower but sufficient.
+It is that the Gospel passion narrative is not \textit{independent
+historical testimony}.  Its content is demonstrably derived from
+Hebrew Bible templates rather than from witness testimony, oral
+tradition traced to an event, or documentary record.  The Gospels
+cannot therefore serve as evidence \textit{for} the historicity
+of the crucifixion; they can serve only as evidence for the fact
+that late first-century communities constructed theologically
+meaningful narratives of a crucifixion using available scriptural
+materials.
+
+Whether any historical event lies beneath those constructions must
+be established, if at all, from sources that are not themselves
+scriptural derivations.  Paul might be such a source, and §3 has
+argued that the Pauline description of the crucifixion is
+generic, soteriological, and non-biographical.  Josephus might be
+such a source, and §5 will argue his attestation is weaker than
+usually claimed.  The argument is cumulative: templating
+neutralises the Gospels as independent testimony; the remaining
+strata must carry the full historicist burden.  They cannot carry
+that burden without assistance from the Gospels they are being
+asked to corroborate.
+
+%% ============================================================
+\section{Non-Christian Attestation}
+%% ============================================================
+
+\paragraph{Josephus \textit{Antiquities} 18.63--64 (the
+\textit{Testimonium Flavianum}).}
+The passage as transmitted contains claims no non-Christian Jewish
+historian of the first century would plausibly make
+(\enquote{He was the Christ}; \enquote{when Pilate had condemned
+him to the cross\ldots he appeared to them alive again on the
+third day}).  The consensus position, following
+\citet{Meier1991,Ehrman2012}, is that the \textit{Testimonium} is
+partially interpolated; \citet{Olson1999} has argued that the full
+text is an Eusebian composition (\textit{c.}~324~CE).
+\citet{Carrier2014} adopts the full-interpolation position.
+Either way, the \textit{Testimonium}'s evidential weight for
+historicity is weak.  The authentic core, if any, is at most the
+observation that a Christian community traced to a figure called
+Jesus existed by the late first century---which neither side of
+the debate contests.
+
+\paragraph{Josephus \textit{Antiquities} 20.200 (the James
+passage).}
+\enquote{James, the brother of Jesus who was called Christ.}
+This passage is accepted by most textual scholars as substantially
+authentic and is regarded as the strongest non-Pauline attestation
+for historicity.  Its evidential weight is nonetheless limited.
+Josephus is writing \circa 93--94~CE, sixty years after any
+supposed crucifixion, at a time when Christian communities were
+already spread across the eastern Mediterranean and their
+narrative about their founder was already in circulation.  His
+passage attests what Christian communities by that date claimed
+about their founder, not independently that Jesus was a
+first-century historical individual.  The structure is identical
+to Tacitus's reference (below): a mid-to-late first-century source
+reports the Christian community's own claim.  Under the
+mythic-origin scenario this is exactly what we would expect;
+under the historicist scenario it is exactly what we would expect;
+the evidence does not discriminate.
+
+\paragraph{Tacitus \textit{Annals}~15.44.}
+Written \circa 116~CE, describing Nero's persecution of Christians
+(64~CE) and referencing \enquote{Christus, from whom the name had
+its origin, suffered the extreme penalty during the reign of
+Tiberius at the hands of one of our procurators, Pontius
+Pilatus.}  The passage is almost certainly dependent on Christian
+informants or on Christian tradition already circulating in Rome;
+Tacitus is not citing Roman administrative records (which would
+not have preserved the execution of a Galilean preacher a century
+earlier) but the Christian community's self-description as
+Tacitus received it.  Like Josephus 20.200, the passage confirms
+early circulation of a historicised narrative without independently
+supporting the narrative itself.
+
+\paragraph{Rabbinic and Mandaean traditions.}
+The Talmudic Yeshu passages (b.Sanhedrin~43a, 107b; b.Sotah~47a;
+b.Shabbat~104b), systematically surveyed by \citet{SchaferP2007},
+and the \textit{Toledoth Yeshu} compilations
+\citep{MeersonSchafer2014}, represent polemical Jewish response to
+Christian claims rather than independent attestation.  Similarly,
+the Mandaean tradition---a surviving Mesopotamian community
+centred on John the Baptist with its own Jesus-references in the
+\textit{Ginza Rabba} and \textit{Book of John}
+\citep{Rudolph1978,BuckleyMandaeans2002,Lupieri2002}---treats Jesus
+as a polemically-reshaped figure whose existence is presupposed
+but whose significance is inverted.  These are interesting data
+for the diversity of the Second Temple religious environment but
+are too late and too dependent on the Christian narrative to count
+as independent attestation of historicity.
+
+\paragraph{Pliny, Suetonius, and minor references.}
+\textit{Pliny the Younger}'s letter to Trajan (\circa 112~CE)
+confirms the existence of Christians in Bithynia; it tells us
+nothing about a first-century historical figure.  \textit{Suetonius}'s
+reference to \enquote{Chrestus} (\textit{Life of Claudius} 25.4)
+may not be to Christ at all; even if it is, it attests Jewish
+unrest in Rome \circa 49~CE, not the historicity of Jesus.
+
+\paragraph{Net non-Christian picture.}
+The non-Christian attestation is weaker than typically claimed.
+What it establishes uncontestedly is that by the late first and
+early second centuries the historicised Christian narrative was
+in wide circulation across the eastern Mediterranean and had
+reached Roman awareness.  Both historicist and mythic-origin
+scenarios must accommodate this datum; neither is favoured by it.
+
+%% ============================================================
+\section{The Argument from Silence}
+%% ============================================================
+
+Section~2 established the formal principle: absence of expected
+evidence is evidence of absence, with strength proportional to the
+expectation.  Four documentary channels are directly relevant.
+
+\paragraph{Philo of Alexandria} (\circa 20~BCE--\circa 50~CE): an
+exact contemporary of the supposed Jesus, a Hellenistic Jewish
+philosopher with an enormous surviving corpus, who wrote
+extensively about Pilate, about Jewish messianic expectation, about
+Wisdom and Logos theology---the precise intellectual milieu from
+which Christianity emerged---and who mentions Jesus nowhere.  The
+silence is moderated by Philo's Alexandrian location, but it is
+not eliminated.
+
+\paragraph{Justus of Tiberias} (late first century): a historian of
+Galilee---Jesus's supposed home region---whose silence on Jesus
+was explicitly remarked by Photius in the ninth century when he
+read the now-lost \textit{History}.  A native Galilean historian's
+silence about a Galilean religious phenomenon substantial enough
+to generate a Mediterranean-wide movement within one generation is
+among the strongest individual silences in the case.
+
+\paragraph{The Mishnaic tradition.}
+The Mishnah, codified \circa 200~CE from earlier oral traditions,
+is a legal code rather than a chronicle.  Its silence on Jesus is
+a weaker datum because the Mishnaic genre does not demand reference
+to individual historical figures.
+
+\paragraph{Roman administrative records.}
+No direct record of Jesus's trial or execution survives.  The
+silence is moderated by the general loss of provincial records
+from the period and by the low-profile character any peasant
+preacher's execution would have had within Roman administration.
+
+\paragraph{Cumulative assessment.}
+The cumulative likelihood ratio from silence is difficult to
+quantify precisely.  The qualitative conclusion is defensible:
+the pattern of silence across multiple independent traditions is
+\textit{more consistent with} mythic-origin scenarios than with
+historicist scenarios, because mythic-origin scenarios predict
+silence while historicist scenarios must explain it through
+auxiliary hypotheses about obscurity.  The cumulative weight is
+real but modest, not decisive; it is one strand of a cumulative
+case, not a standalone proof.
+
+%% ============================================================
+\section{Conclusion}
+%% ============================================================
+
+The evidence for the historicity of Jesus of Nazareth has been
+examined across every available category.  The findings may be
+summarised as follows.
+
+The Pauline corpus describes a revelatory celestial figure known
+through \grk{apokalypsis} and scriptural exegesis.  Paul's
+discourse is intelligible within the Second Temple Jewish mystical-
+apocalyptic tradition without requiring a recent historical
+subject.  The \grk{adelphos tou kyriou} passages
+(Gal~1:19, 1~Cor~9:5)---the principal historicist evidence---are
+more parsimoniously read as community-title than as biological
+kinship, given Paul's own corpus-wide distribution (117~community
+uses, 0~unambiguous biological uses outside the two contested
+cases) and the well-attested Greek associative-community use of
+\grk{adelphoi tou} [patron figure] documented by
+\citet{Harland2005}.  The contested passages that do pose
+difficulties for mythic-origin scenarios
+(Rom~1:3--4, Gal~4:4, 1~Cor~15:3--8) are textually secure and
+admit mythic-origin readings, though with interpretive work the
+historicist readings do not require.  This asymmetry is honestly
+acknowledged.
+
+The Gospel narratives are demonstrably constructed from Hebrew
+Bible templates.  This establishes that the Gospels are \textit{not
+independent historical testimony}, not that they disprove the
+existence of a subject.  The evidentiary burden therefore shifts
+to non-Gospel sources, which are individually weaker than the
+consensus projects.
+
+The non-Christian attestation (Josephus, Tacitus, rabbinic,
+Mandaean, Pliny, Suetonius) confirms the early circulation of a
+Christian narrative about a historical founder but does not
+independently confirm the narrative.  Both hypotheses accommodate
+this datum.  The cumulative silence of contemporaneous sources
+(Philo, Justus of Tiberias, the Mishnah, Roman administrative
+records) constitutes qualitatively real disconfirming evidence
+whose aggregate weight is modest but real.
+
+Every narrative element attributed to the earliest Christian
+community's Christ---pre-existence, descent, vicarious suffering,
+resurrection, exaltation, cosmic lordship, crucifixion under
+scriptural curse---is derivable from pre-Christian Jewish
+apocalyptic-mystical resources (the Danielic Son of Man, Philo's
+Logos, angelomorphic mediators, the Suffering Servant,
+Dt~21:23 in combination with scriptural exegesis).  The pagan-
+mystery-cult framing of the older mythicist literature is not the
+argument this paper defends.
+
+Placed in the landscape of comparable existence-questions,
+Jesus's evidentiary profile most closely matches the contested-
+figures category (Pythagoras, Homer, Arthur, Laozi)---probable
+historical kernel with massive legendary elaboration, or community
+construction to satisfy founder-myth requirements, with the
+evidence insufficient to discriminate---rather than the secured-
+figures category (Pilate, Socrates) or the rejected category
+(Moses, Lycurgus, Romulus).  Under plausible Bayesian assumptions,
+the posterior probability of historicity lands in the range
+0.23--0.39 given a neutral prior, and materially below the near-
+certainty the consensus projects even with a strong historicist
+prior.
+
+The responsible conclusion is that the evidence does not establish
+the historicity of Jesus with the confidence the consensus claims,
+that the mythic-origin hypothesis in its Jewish-apocalyptic form
+is a serious alternative that survives scrutiny of its weaknesses,
+and that the scholarly consensus is sustained partly by the
+institutional and methodological structure of the field.  This
+paper does not argue that Jesus definitely did not exist; it does
+not argue that mythic-origin has been proven more probable than
+historicity; it argues that the evidence is insufficient to
+support near-certainty either way.  The question should be treated
+as genuinely open, and if the field cannot bring itself to treat
+it as open---if the mere posing of the question continues to be
+treated as a mark of incompetence rather than as a legitimate
+scholarly inquiry---the field has a problem that no amount of
+consensus can resolve.
+
+\vspace{1em}
+
+\noindent\rule{0.4\textwidth}{0.4pt}\par
+\vspace{0.5em}
+\small\noindent\textit{Supplementary material.}  Complete data and
+methodology in the full-length companion paper \textit{The
+Evidentiary Status of the Historical Jesus: A Critical Assessment}
+(84~pp.) and two supplements: a colour-coded enumeration of every
+\grk{adelph-} lexeme in the seven undisputed Pauline letters, and
+a corpus-linguistic baseline study of 212 random-sampled
+\grk{adelphos} tokens across six non-Christian Greek corpora with
+inscriptional appendix.  All artifacts at
+\url{https://github.com/sbthomas/historicity}.
+
+\noindent\textit{Acknowledgments.}  This paper benefited from
+extensive critical dialogue conducted with Claude (Anthropic),
+which served as adversarial interlocutor and peer reviewer
+throughout.  The arguments and conclusions are the author's own.
+
+\bibliography{historicity}
+
+\end{document}

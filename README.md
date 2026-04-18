@@ -122,6 +122,15 @@ inscriptions from voluntary religious associations where *adelphoi*
 explicitly designates fellow members (compiled from Harland's
 Associations in the Greco-Roman World database).
 
+### Journal-length version
+
+`historicity-journal.tex` / `historicity-journal.pdf` (~20 pages, ~5K
+words). A compressed presentation of the core argument, suitable for
+submission to venues such as *Journal for the Study of the Historical
+Jesus*, *History of Religions*, *The Journal of Religion*, or *Method
+& Theory in the Study of Religion*. References the full-length paper
+and supplements for detailed evidence.
+
 ---
 
 ## Repository contents
@@ -129,6 +138,7 @@ Associations in the Greco-Roman World database).
 | Path | Description |
 |---|---|
 | `historicity.tex` / `.pdf` / `.bib` | Main paper and bibliography |
+| `historicity-journal.tex` / `.pdf` | Journal-length compressed version (~5K words, 20 pp) |
 | `historicity-supplement.tex` / `.pdf` | Pauline *adelph-* supplement |
 | `supplement_body.tex` | Generated Greek body of supplement 1 |
 | `historicity-baseline.tex` / `.pdf` | Baseline + inscriptional appendix |
