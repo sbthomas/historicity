@@ -1,0 +1,349 @@
+%%% historicity-baseline.tex — Bayesian baseline supplement
+%%% Compile: xelatex historicity-baseline && xelatex historicity-baseline
+%%%
+%%% Corpus-linguistic baseline for adelphos in contemporary-or-earlier
+%%% non-Christian Greek, for the Bayesian prior argument of the main
+%%% paper (§3.5).
+
+\documentclass[11pt,oneside]{article}
+
+\usepackage[letterpaper,margin=1in,headheight=14pt]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{array}
+\IfFileExists{csquotes.sty}%
+  {\usepackage[autostyle,english=american]{csquotes}}%
+  {\providecommand{\enquote}[1]{``##1''}}
+\usepackage[colorlinks=true,linkcolor=blue!60!black,urlcolor=blue!60!black]{hyperref}
+
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{STIX Two Text}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\itshape Baseline: \textit{adelphos} in contemporary Greek}
+\fancyhead[R]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries Supplementary Material:\\[4pt]
+   Corpus-Linguistic Baseline for \textit{Adelphos}\\[2pt]
+   in Contemporary Greek}\\[18pt]
+  {\large Companion to \textit{The Evidentiary Status of the Historical Jesus}}\\[6pt]
+  {\normalsize Stan Thomas}\\[4pt]
+  {\normalsize Independent Researcher, St.\ George, Utah\\
+   ORCID: 0000-0002-8828-7856}\\[12pt]
+  {\normalsize Draft of \today}
+\end{center}
+
+\vspace{0.5em}
+
+\section*{Purpose}
+
+The main paper's §3.5 observes that across the seven undisputed Pauline
+letters, 117 of 121 \textit{adelph-} tokens classify as community/fellow-
+believer, zero as unambiguously biological-sibling, and four as disputed
+(Rom 9:3, Rom 16:15, 1 Cor 9:5, Gal 1:19).  That observation takes on
+evidential force only if we can say how \textit{atypical} Paul's
+distribution is against a background of contemporary-or-earlier Greek
+usage, uncontaminated by any influence from Paul himself or from later
+Christian discourse.
+
+This supplement establishes that background.  It samples
+\textit{adelph-} family occurrences across six non-Christian corpora
+spanning pre-Pauline to contemporary non-Christian Greek, classifies
+each token into the same A/B/C/D/E scheme used in the companion
+\textit{Pauline Occurrences} supplement (extended with categories D and
+E for ethnic kinship and literary metaphor), and reports per-bucket and
+aggregate proportions with Wilson 95\% confidence intervals.
+
+\section*{Corpus design}
+
+Six \textbf{non-Christian} baseline buckets, chosen to cover the
+register diversity Paul would have encountered (documentary,
+scriptural, historiographical, philosophical, literary) and to include
+both pre-Pauline and contemporary non-Christian sources.  Two
+additional \textbf{post-Pauline Christian} buckets are included for
+contextual comparison \textit{only}---they are downstream of Pauline
+discourse and therefore cannot inform a prior.
+
+\begin{center}
+\begin{tabular}{@{}lll@{}}
+\toprule
+Bucket & Dates & Rationale \\
+\midrule
+\multicolumn{3}{l}{\textit{\textbf{Baseline — non-Christian, contemporary or earlier}}} \\
+Papyri (documentary) & 100 BCE – 70 CE & Everyday Greek; expected heavy B \\
+Septuagint (LXX) & 3rd–1st c.\ BCE & Paul's scripture; heavy B and D \\
+Philo of Alexandria & c.\ 20 BCE – 50 CE & Hellenistic Jewish-Greek, contemporary \\
+Josephus & writing 75–95 CE & Jewish, non-Christian, contemporary \\
+Pre-Pauline literary & 2nd c.\ BCE – 1st c.\ BCE & Polybius, Diodorus, Strabo (pagan) \\
+Hellenistic literary & c.\ 50–120 CE & Plutarch, Epictetus, Dio Chrysostom (pagan) \\
+\midrule
+\multicolumn{3}{l}{\textit{Downstream Christian — for context, not prior}} \\
+NT non-Pauline letters & c.\ 60–100 CE & Hebrews, James, 1–2 Peter, 1–3 John, Jude \\
+Gospels + Acts & c.\ 70–95 CE & Narrative Christian; biographical B-references \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Each bucket contributes $n \approx 35$ randomly-sampled tokens, for a
+baseline total of $N = 212$.  Sampling is by
+\texttt{random.sample}(seed=42) over the full set of \textit{adelph-}
+family occurrences identified per corpus.
+
+Sources: SBL Greek New Testament; Rahlfs Septuagint; Loeb/Niese
+Josephus (via Perseus); Duke Databank of Documentary Papyri (via GitHub
+EpiDoc repository); Cohn--Wendland Philo (via \textit{Open Greek and
+Latin}); Perseus canonical-greekLit for literary authors.  All sources
+are openly licensed or public-domain.
+
+\section*{Classification scheme}
+
+Identical to the Pauline supplement, extended with D (ethnic/tribal/
+covenantal kinship) and E (literary/metaphorical extension) because the
+broader corpus routinely exhibits these uses where Paul almost never
+does.
+
+\begin{description}[leftmargin=2em]
+\item[\textbf{A}] Community / voluntary association (religious,
+  philosophical, professional, cultic).  Membership by election.
+\item[\textbf{B}] Biological sibling (shared parentage).
+\item[\textbf{C}] Disputed / ambiguous (borderline cases default here).
+\item[\textbf{D}] Ethnic / tribal / covenantal kinship (fellow-Israelite,
+  fellow-tribe-member, fellow-Greek as ethnos).  Membership by birth
+  into a group larger than the immediate family.
+\item[\textbf{E}] Literary / metaphorical extension (personified virtues,
+  cosmic-kinship rhetoric, poetic pairings, philosophical universals).
+\end{description}
+
+Single-coder classification by the paper's author.  Inter-rater
+agreement is not assessed; this is disclosed as a methodological
+limitation.
+
+\section*{Results}
+
+\subsection*{Per-bucket proportions with Wilson 95\% CIs}
+
+\begin{center}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Bucket & $N$ & A \% (95\% CI) & B \% (95\% CI) & C \% & D \% & E \% \\
+\midrule
+\multicolumn{7}{l}{\textbf{Baseline (non-Christian)}} \\
+Papyri (pre-70 CE)     & 35  & 0.0 [0.0, 9.9]    & 100.0 [90.1, 100] & 0.0  & 0.0  & 0.0 \\
+LXX                    & 35  & 0.0 [0.0, 9.9]    & 68.6 [52.0, 81.4] & 5.7  & 25.7 & 0.0 \\
+Josephus               & 35  & 0.0 [0.0, 9.9]    & 60.0 [43.6, 74.4] & 5.7  & 34.3 & 0.0 \\
+Philo                  & 35  & 2.9 [0.5, 14.5]   & 57.1 [40.9, 72.0] & 2.9  & 5.7  & 31.4 \\
+Hellenistic literary   & 36  & 0.0 [0.0, 9.6]    & 80.6 [65.0, 90.2] & 0.0  & 2.8  & 16.7 \\
+Pre-Pauline literary   & 36  & 2.8 [0.5, 14.2]   & 94.4 [81.9, 98.5] & 0.0  & 0.0  & 2.8 \\
+\midrule
+\textbf{Baseline aggregate} & \textbf{212} & \textbf{0.9 [0.3, 3.4]} & \textbf{76.9 [70.8, 82.1]} & 2.4 & 11.3 & 8.5 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Downstream Christian (for context only, not prior)}} \\
+NT non-Pauline letters & 35  & 94.3 [81.4, 98.4] & 2.9 [0.5, 14.5]   & 2.9  & 0.0  & 0.0 \\
+Gospels + Acts         & 35  & 40.0 [25.6, 56.4] & 51.4 [35.6, 67.0] & 2.9  & 5.7  & 0.0 \\
+\midrule
+\multicolumn{7}{l}{\textbf{Reference: undisputed Pauline corpus}} \\
+Pauline (7 letters)    & 121 & 96.7 [91.8, 98.7] & 0.0 [0.0, 3.1]    & 3.3  & 0.0  & 0.0 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Headline finding}
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Corpus & A-rate & 95\% CI \\
+\midrule
+Baseline (non-Christian, $N=212$)  & 0.9\%  & [0.3\%, 3.4\%] \\
+Paul (undisputed, $N=121$)         & 96.7\% & [91.8\%, 98.7\%] \\
+\midrule
+\textbf{Ratio (Paul / baseline)}   & \textbf{$\approx 103\times$} & (CIs do not overlap) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The Pauline A-rate exceeds the non-Christian baseline by approximately
+two orders of magnitude.  The confidence intervals do not overlap at
+any reasonable significance level: Paul's 95\% CI lower bound is
+91.8\%, while the baseline 95\% CI upper bound is 3.4\%.  This is a
+genuinely extreme distributional deviation.
+
+\section*{What this licenses — and what it doesn't}
+
+\textbf{What it licenses.}  Paul's use of \textit{adelphos} is not
+ordinary contemporary Greek usage.  It is a strongly marked dialect
+characteristic of early Christian community discourse.  The
+\textit{prior} probability that any given Pauline \textit{adelphos}
+token is community-sense is very high; the prior probability that any
+given Pauline \textit{adelphos} token is biological-sibling-sense is
+very low.  This is not an artefact of modern translation or
+interpretation; it is a distributional fact of the Pauline corpus
+itself, against a clearly-defined non-Pauline non-Christian baseline.
+
+For the disputed \textit{adelphos tou kyriou} passages (Gal 1:19,
+1 Cor 9:5), the conservative Bayesian framing is:
+\begin{itemize}[leftmargin=1.5em]
+\item The \textit{general} prior (from the non-Christian baseline)
+  would favour biological-sibling reading by roughly $77$ to $1$
+  against community reading for any given \textit{adelphos} token.
+\item The \textit{Pauline-specific} prior reverses that ratio to
+  roughly $29$ to $1$ favouring community reading.
+\item Which prior applies depends on whether Paul's \textit{adelphos}
+  usage is governed by (a) general Greek conventions or (b) his own
+  attested distributional pattern.  The evidence overwhelmingly favours
+  (b): Paul's distribution is stable across seven letters with 121
+  tokens and 0 unambiguous biological uses outside the two disputed
+  passages.
+\end{itemize}
+
+\textbf{What it does not license.}  This supplement does \textit{not}
+compute a posterior probability for the historicity of Jesus.  It does
+not multiply base rates by likelihood ratios, because such
+multiplication requires auxiliary assumptions (for example, about the
+rate at which a community-title in Greek would persist across a
+translation from Aramaic, or about the sampling independence of the
+$121$ Pauline tokens) that deserve their own methodological defence.
+We report the base rates and the deviation; we leave the full
+probabilistic argument to readers who wish to construct one.
+
+\section*{Observations on each baseline bucket}
+
+\textbf{Papyri (pre-70 CE).}  100\% biological.  Private letters,
+guardianship clauses, co-ownership documents.  The single dominant
+pattern in documentary Greek is \textit{adelphos} = biological sibling,
+commonly in epistolary greeting-formulas (\enquote{so-and-so to his
+brother, greetings}) or legal kinship-designations.  No voluntary-
+association uses at all.  The Ptolemaic dating-formula occurrences
+(\enquote{Berenice the sister of the gods}) are biological
+sister-wives with a cultic epithet, not semantically distinct.
+
+\textbf{LXX.}  68.6\% biological, 25.7\% covenantal.  The D fraction
+(\enquote{your brother the Israelite}) reflects Hebrew \textit{'ach}
+translated into Greek.  Crucially, no A.  The Jewish scriptural
+register has no voluntary-association \textit{adelphos}: the
+\enquote{brothers} of the LXX are either patriarchal siblings or
+tribal-Israelite compatriots.
+
+\textbf{Josephus.}  60.0\% biological, 34.3\% covenantal.  Similar
+profile to LXX, reflecting Josephus's Jewish-historiographical
+orientation.  Again, no A.
+
+\textbf{Philo.}  57.1\% biological, 31.4\% metaphorical (virtue-as-
+sister, cosmic kinship).  Philo's philosophical register introduces
+heavy E (\textit{\enquote{piety and its sister, impiety}}) not seen
+elsewhere.  One A (the Therapeutae's brotherhood) is the lone
+voluntary-association use across Philo's corpus, and even it is
+contested in the critical apparatus.
+
+\textbf{Hellenistic literary (Plutarch, Epictetus, Dio).}  80.6\%
+biological, 16.7\% metaphorical.  The E fraction is concentrated in
+Epictetus's Stoic cosmopolitan arguments (\enquote{all humans are
+brothers, since Zeus is our ancestor}) and Dio's civic-concord
+rhetoric.  No A.  The \textit{closest} approximation to community-
+sense usage in this bucket is the Stoic \enquote{brothers in the
+philosophical life}, classified E because it is a rhetorical
+universalism rather than a voluntary membership designation.
+
+\textbf{Pre-Pauline literary (Polybius, Diodorus, Strabo).}  94.4\%
+biological.  The one A token in this bucket is striking: Strabo
+\textit{Geog.}\ 16.4.21 describes a Nabataean royal court official
+called \enquote{brother} (\textit{adelphos}) as an honorific
+designation of a favoured companion of the king.  This is the single
+closest structural parallel in the entire baseline to a Pauline
+\enquote{Brothers of the Lord} title: a voluntary/honorific
+\textit{adelphos} designating membership in a recognised inner circle
+around a central figure.  It is exactly \textit{one} occurrence in
+$212$ baseline tokens.
+
+\textbf{Post-Pauline Christian (for context).}  The NT non-Pauline
+letters show the same 94.3\% A distribution as Paul himself, indicating
+that the Pauline usage had propagated through early Christian letter-
+writing by the late first century.  The Gospels + Acts bucket is
+intermediate (40\% A, 51\% B) because narrative frame generates
+biographical biological references (Jesus's brothers, Peter-Andrew,
+James-John, etc.).  These buckets are \textit{not} prior evidence about
+Paul's linguistic environment; they are downstream inheritors of his
+(or his community's) distinctive usage.
+
+\section*{Limitations}
+
+\begin{enumerate}[leftmargin=1.5em]
+\item \textbf{Single-coder classification.}  All 212 baseline
+  classifications were made by the paper's author using the criteria in
+  the Pauline supplement.  No inter-rater agreement is assessed.
+  A defensible replication would require independent classification by
+  at least one other coder and computation of Cohen's $\kappa$.  The
+  first-pass tentative classifications from a separate agent (for
+  papyri, LXX, Josephus, and the Christian context buckets) have been
+  reviewed against the author's coding; disagreements are flagged in
+  the data files where they occur.
+\item \textbf{Inscriptions excluded.}  Greek inscriptions (IG, SEG) are
+  a relevant seventh register — cult-association, civic-brotherhood,
+  and guild uses cluster there.  They were not sampled in this
+  iteration due to digital-access constraints.  Their inclusion would
+  plausibly raise the baseline A-rate, most likely into the 3--10\%
+  range.  The A-rate gap would still be enormous.
+\item \textbf{Sample size modest per bucket.}  $n \approx 35$ per
+  bucket gives wide within-bucket CIs.  The aggregate $N = 212$ CI is
+  tighter, but expanding to $n = 100$ per bucket would sharpen the
+  estimate substantially.
+\item \textbf{Bucket-weighting is equal, not register-proportional.}
+  An alternative aggregate could weight by estimated volume of Greek
+  Paul would have encountered (heavier on papyri and LXX, lighter on
+  Plutarch).  Equal weighting across the six buckets gives each
+  register equal voice in the aggregate; register-proportional
+  weighting would likely push the aggregate A-rate even lower,
+  because the register with the largest corpus volume (papyri) has
+  0\% A.
+\item \textbf{D/E boundary is a judgement call in Philo and Epictetus.}
+  Philo's \enquote{sister-virtues} and Epictetus's \enquote{cosmopolitan
+  brothers} occupy a fuzzy zone between voluntary-association (A) and
+  rhetorical-universalism (E).  We resolved these toward E because the
+  referents are abstract (virtues, humanity-at-large) rather than
+  concrete members of a named movement.  A stricter coder might push
+  some E tokens to A; doing so would raise the baseline A-rate
+  modestly but would not change the order-of-magnitude conclusion.
+\end{enumerate}
+
+\section*{Conclusion}
+
+In a corpus of $212$ randomly-sampled \textit{adelphos} tokens drawn
+from six non-Christian, contemporary-or-earlier Greek corpora, the
+rate of community / voluntary-association usage is $0.9\%$ (95\% CI:
+$[0.3\%, 3.4\%]$).  The comparable rate in the seven undisputed Pauline
+letters is $96.7\%$ (95\% CI: $[91.8\%, 98.7\%]$).  The ratio is
+approximately $103\times$, and the confidence intervals do not overlap.
+
+The conservative Bayesian reading is that Paul's \textit{adelphos}
+usage is a registered dialect of early Christian community discourse,
+strikingly distinctive against the baseline of contemporary Greek.  Any
+interpretation of a disputed Pauline \textit{adelphos} token --- notably
+Galatians 1:19 --- should be anchored in Paul's own attested
+distribution, not in general Greek usage conventions.  That anchoring
+is what the main paper's §3.5 argues for on direct lexical grounds; the
+present supplement corroborates it quantitatively.
+
+\vspace{1.5em}
+\noindent\rule{0.5\textwidth}{0.4pt}\par
+\vspace{0.5em}
+\small\noindent\textit{Attribution:} SBL Greek New Testament
+(\textcopyright~2010 SBL/Logos, CC BY 4.0); Perseus canonical-greekLit
+and Open Greek and Latin First1KGreek (CC BY-SA 4.0); Duke Databank of
+Documentary Papyri (CC BY 3.0).  All source texts and the Python
+pipeline that produced the samples are included in the project
+repository at \url{https://github.com/sbthomas/historicity}.
+
+\end{document}

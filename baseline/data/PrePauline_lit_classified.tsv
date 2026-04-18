@@ -1,0 +1,37 @@
+#	author	work	ref	greek_form	greek_context	class	reason
+1	Polybius	tlg0543/tlg001	3.79.4	ἀδελφὸν	τὸν ἀδελφὸν ἀπέλιπε Μάγωνα	B	Hannibal leaves brother Mago — biological
+2	Polybius	tlg0543/tlg001	10.5.2	ἀδελφόν	στάντος παρὰ τὸν ἀδελφόν	B	Scipio next to his brother — biological
+3	Polybius	tlg0543/tlg001	5.87.6	ἀδελφῆς	ἀνέζευξε μετὰ τῆς ἀδελφῆς καὶ τῶν φίλων	B	Ptolemaic sister, biological (also sister-wife)
+4	Polybius	tlg0543/tlg001	15.33.7	ἀδελφαῖς	Ἀγαθόκλεια γυμνὴ σὺν ταῖς ἀδελφαῖς	B	Agathocleia's biological sisters
+5	Polybius	tlg0543/tlg001	27.18.1	ἀδελφὸν	τὸν ἀδελφὸν Εὐμένη	B	Attalus and brother Eumenes — biological
+6	Polybius	tlg0543/tlg001	31.19.2	τἀδελφοῦ	τῆς τἀδελφοῦ πλεονεξίας	B	Brother's greed — biological
+7	Polybius	tlg0543/tlg001	10.4.4	τἀδελφοῦ	θύουσαν τοῖς θεοῖς ὑπὲρ τἀδελφοῦ	B	Mother praying for son's brother — biological
+8	Polybius	tlg0543/tlg001	4.50.9	ἀδελφὸν	πατρὸς ἀδελφὸν	B	Father's brother = uncle (biological kin)
+9	Polybius	tlg0543/tlg001	10.4.6	τἀδελφῷ	ἅμα τἀδελφῷ καθεσταμένος ἀγορανόμος	B	With the brother holding office — biological
+10	Polybius	tlg0543/tlg001	10.4.3	ἀδελφὸν	τὸν ἀδελφὸν ἐφιξόμενον τῆς ἀρχῆς	B	Scipio's brother attaining office — biological
+11	Polybius	tlg0543/tlg001	5.41.2	τἀδελφοῦ	Σελεύκου τἀδελφοῦ ταύτην αὐτῷ τὴν πίστιν ἐγχειρίσαντος	B	Seleucus the brother — biological royal
+12	Polybius	tlg0543/tlg001	28.7.15	τἀδελφῷ	τὰς ὑπαρχούσας Εὐμένει τἀδελφῷ τιμάς	B	Honors to brother Eumenes — biological
+13	Strabo	tlg0099/tlg001	10.4.19	ἀδελφοῦ	ἐβασίλευεν ὁ Λυκοῦργος ἀντὶ τοῦ ἀδελφοῦ	B	Lycurgus reigning on behalf of biological brother
+14	Strabo	tlg0099/tlg001	17.1.18	ἀδελφοῦ	ἀπὸ τοῦ ἀδελφοῦ τοῦ πρώτου Πτολεμαίου	B	Named for Ptolemy's biological brother
+15	Strabo	tlg0099/tlg001	17.1.11	ἀδελφῆς	ἀπῆρε μετὰ τῆς ἀδελφῆς εἰς τὴν Συρίαν	B	Cleopatra and biological sister to Syria
+16	Strabo	tlg0099/tlg001	16.4.25	ἀδελφῆς	καταψευσάμενον τῆς ἀδελφῆς	B	False accusation about biological sister
+17	Strabo	tlg0099/tlg001	6.3.3	ἀδελφοὺς	ὡς ἂν ἀλλήλων ἀδελφοὺς νομιζομένους	E	Italiote federation treated-as-brothers — rhetorical/political metaphor
+18	Strabo	tlg0099/tlg001	16.4.21	ἀδελφόν	ἐπίτροπον τῶν ἑταίρων τινὰ καλούμενον ἀδελφόν	A	Nabataean court title "brother" for a royal companion — honorific community designation
+19	Strabo	tlg0099/tlg001	16.4.25	ἀδελφοὺς	τοὺς ἀδελφοὺς πάντας ἐν τῇ ἀγορᾷ καταλιπεῖν	B	Nabataean brothers-in-agora (biological male kin)
+20	Strabo	tlg0099/tlg001	9.5.21	ἀδελφοῦ	Φλεγύου τοῦ Ἰξίονος ἀδελφοῦ	B	Mythological biological brother
+21	Strabo	tlg0099/tlg001	14.6.6	ἀδελφῇ	Κλεοπάτρᾳ καὶ τῇ ἀδελφῇ αὐτῆς Ἀρσινόῃ	B	Cleopatra and sister Arsinoe — biological
+22	Strabo	tlg0099/tlg001	10.4.8	ἀδελφοῦ	Ῥαδαμάνθυος ὁμωνύμου τοῦ ἀδελφοῦ αὐτοῦ	B	Rhadamanthys's namesake brother — biological
+23	Strabo	tlg0099/tlg001	9.5.9	ἀδελφῆς	Σπερχειοῦ παῖδα καὶ τῆς ἀδελφῆς τῆς Ἀχιλλέως	B	Achilles's sister — biological
+24	Strabo	tlg0099/tlg001	14.2.17	ἀδελφῶν	ὁ πρεσβύτατος τῶν ἀδελφῶν	B	Carian royal brothers — biological
+25	Diodorus	tlg0060/tlg001	4.50.1	ἀδελφὸν	τὸν δʼ ἀδελφὸν Πρόμαχον	B	Brother Promachus — biological
+26	Diodorus	tlg0060/tlg001	4.27.2	τἀδελφῷ	συνοικίσαι τἀδελφῷ	B	Daughter married to the brother (Atlas/Hesperus myth) — biological
+27	Diodorus	tlg0060/tlg001	5.62.3	ἀδελφὰς	τὰς δὲ τῆς φθαρείσης ἀδελφὰς Μολπαδίαν καὶ Παρθένον	B	Biological sisters (named) in narrative
+28	Diodorus	tlg0060/tlg001	3.71.1	ἀδελφοὺς	πρὸς τοὺς ἀδελφοὺς Τιτᾶνας	B	Titan brothers of Cronus — mythological biological
+29	Diodorus	tlg0060/tlg001	4.40.3	ἀδελφὸν	τὸν δʼ ἀδελφὸν εὐλαβεῖσθαι	B	Wary of the brother — biological
+30	Diodorus	tlg0060/tlg001	1.37.5	Φιλαδέλφου	Πτολεμαίου τοῦ Φιλαδέλφου προσαγορευθέντος	B	Ptolemy "Philadelphus" epithet — origin in biological brother-relation
+31	Diodorus	tlg0060/tlg001	3.71.1	ἀδελφῷ	Κρόνῳ τῷ ἀδελφῷ	B	Cronus the brother — mythological biological
+32	Diodorus	tlg0060/tlg001	1.27.1	ἀδελφὰς	γαμεῖν ἀδελφὰς	B	Egyptian sibling-marriage custom — biological
+33	Diodorus	tlg0060/tlg001	4.40.1	ἀδελφιδοῦν	ἀδελφιδοῦν δὲ Πελίου	B	Jason as Pelias's nephew (brother's son) — biological kin via brother
+34	Diodorus	tlg0060/tlg001	4.54.5	ἀδελφῆς	Κίρκης τῆς ἀδελφῆς	B	Circe the sister — mythological biological
+35	Diodorus	tlg0060/tlg001	5.79.3	ἀδελφὸν	τὸν δὲ τρίτον ἀδελφὸν Σαρπηδόνα	B	Third brother Sarpedon — mythological biological
+36	Diodorus	tlg0060/tlg001	1.54.5	ἀδελφικὴν	εὔνοιαν δὲ ἀδελφικὴν ἔχοντας	B	Brotherly goodwill among actual biological brothers
