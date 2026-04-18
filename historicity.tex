@@ -365,6 +365,39 @@ the strongest traditional historicist argument---multiple independent
 attestation---and its implications have been under-pursued in the
 historical-Jesus literature.
 
+\paragraph{A sensitivity analysis implementation.}
+The project repository includes a simple dependency-aware Bayesian
+sensitivity analysis (\textit{scripts/bayesian\_sensitivity.py},
+report in \textit{baseline/bayesian\_report.md}) that implements
+this framework explicitly for the present question.  Each of the
+principal evidentiary strands discussed in this paper
+(Paul's \textit{adelphos} distribution, Rom~1:3, Gal~4:4, the
+1~Corinthians~15 witness list, Paul's biographical silence, the
+Gospels' scriptural construction, the Josephan James passage, the
+Testimonium Flavianum, Tacitus, the Jewish-apocalyptic matrix,
+cumulative silence) is assigned a point-estimate likelihood ratio
+in decibels, with source-dependency explicitly flagged so that the
+contribution of dependent sources is discounted rather than
+multiplied.  Under plausible point estimates and a neutral
+$P(H)=0.5$ prior, the posterior $P(H|E)$ lands in the range of
+roughly 0.23--0.39 depending on how aggressively dependencies are
+discounted---open-question territory by any reasonable standard.
+Under higher priors ($P(H)=0.9$), the posterior remains higher
+(0.73--0.85) but still materially below the near-certainty the
+historicity consensus projects.
+
+The tool is explicitly a sensitivity analysis rather than a
+claim to the ``correct'' posterior: point estimates are
+contestable, and the exercise is to see how the posterior shifts
+under different assumptions about individual evidence pieces.  The
+tool's principal contribution is to make the informal Bayesian
+reasoning of the field auditable: Carrier's \citeyear{Carrier2014}
+multiplication approach, extended or contested point-by-point by
+historicist critics, can be made to run on a shared apparatus
+where the sources of posterior-sensitivity are explicit.  This is
+what Tucker 2004 advocates methodologically; to our knowledge it
+has not been done for the historicity question until now.
+
 %% ------------------------------------------------------------
 \subsection{Absence of Evidence as Evidence of Absence}
 \label{sec:method:silence}
