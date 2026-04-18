@@ -19,8 +19,10 @@
   {\providecommand{\enquote}[1]{``##1''}}
 \usepackage[colorlinks=true,linkcolor=blue!60!black,urlcolor=blue!60!black]{hyperref}
 
+%% STIX Two Text on several systems lacks the polytonic Greek block
+%% (U+1F00–1FFF); using Palatino which has full polytonic coverage.
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont{STIX Two Text}
+\setmainfont{Palatino}
 
 \pagestyle{fancy}
 \fancyhf{}

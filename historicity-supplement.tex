@@ -19,10 +19,14 @@
 \usepackage[colorlinks=true,linkcolor=blue!60!black,urlcolor=blue!60!black]{hyperref}
 
 %% –– Fonts ––
+%% STIX Two Text on several systems is shipped without the polytonic
+%% Greek block (U+1F00–1FFF); we use Palatino, which has full polytonic
+%% coverage on macOS and Linux, and is the standard choice for
+%% typesetting biblical Greek in SBL and Cambridge UP editions.
 \defaultfontfeatures{Ligatures=TeX}
-\setmainfont{STIX Two Text}
-\newfontfamily\greekfont{STIX Two Text}
-\newfontfamily\greekfontsf{STIX Two Text}
+\setmainfont{Palatino}
+\newfontfamily\greekfont{Palatino}
+\newfontfamily\greekfontsf{Palatino}
 
 %% –– Headers ––
 \pagestyle{fancy}
