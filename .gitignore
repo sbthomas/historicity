@@ -26,3 +26,8 @@ __pycache__/
 20260*.jpg
 20260*.jpeg
 20260*.png
+IMG_*.jpg
+IMG_*.jpeg
+IMG_*.png
+Adobe Scan*.pdf
+Adobe Scan*.jpg
